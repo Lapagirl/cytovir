@@ -3,49 +3,49 @@
     src:
         url("fonts/CRC55.woff2") format("woff2"),
         url("fonts/CRC55.woff") format("woff"),
-        url("fonts/CRC55.otf") format("opentype");
-    font-style: normal;
-    font-weight: 400;
+        url("fonts/CRC55.otf") format("opentype"),
+        url("fonts/CRC55.ttf") format("truetype"),
+        url("fonts/CRC55.eot") format("eot");
 }
 
 @font-face {
     font-family:"Circe Extra Light";
     src:
-            url("fonts/CRC25.woff2") format("woff2"),
-            url("fonts/CRC25.woff") format("woff"),
-            url("fonts/CRC25.otf") format("opentype");
-    font-style:normal;
-    font-weight:400;
+        url("fonts/CRC25.woff2") format("woff2"),
+        url("fonts/CRC25.woff") format("woff"),
+        url("fonts/CRC25.otf") format("opentype"),
+        url("fonts/CRC25.ttf") format("truetype"),
+        url("fonts/CRC25.eot") format("eot");
 }
 
 @font-face {
     font-family:"Circe Light";
     src:
-            url("fonts/CRC35.woff2") format("woff2"),
-            url("fonts/CRC35.woff") format("woff"),
-            url("fonts/CRC35.otf") format("opentype");
-    font-style:normal;
-    font-weight:400;
+        url("fonts/CRC35.woff2") format("woff2"),
+        url("fonts/CRC35.woff") format("woff"),
+        url("fonts/CRC35.otf") format("opentype"),
+        url("fonts/CRC35.ttf") format("truetype"),
+        url("fonts/CRC35.eot") format("eot");
 }
 
 @font-face {
     font-family:"Circe Bold";
     src:
-            url("fonts/CRC65.woff2") format("woff2"),
-            url("fonts/CRC65.woff") format("woff"),
-            url("fonts/CRC65.otf") format("opentype");
-    font-style:normal;
-    font-weight:400;
+        url("fonts/CRC65.woff2") format("woff2"),
+        url("fonts/CRC65.woff") format("woff"),
+        url("fonts/CRC65.otf") format("opentype"),
+        url("fonts/CRC65.ttf") format("truetype"),
+        url("fonts/CRC65.eot") format("eot");
 }
 
 @font-face {
     font-family:"Circe Extra Bold";
     src:
-            url("fonts/CRC75.woff2") format("woff2"),
-            url("fonts/CRC75.woff") format("woff"),
-            url("fonts/CRC75.otf") format("opentype");
-    font-style:normal;
-    font-weight:400;
+        url("fonts/CRC75.woff2") format("woff2"),
+        url("fonts/CRC75.woff") format("woff"),
+        url("fonts/CRC75.otf") format("opentype"),
+        url("fonts/CRC75.ttf") format("truetype"),
+        url("fonts/CRC75.eot") format("eot");
 }
 
 @font-face {
@@ -54,9 +54,8 @@
         url("fonts/MyriadPro-It.woff2") format("woff2"),
         url("fonts/MyriadPro-It.woff") format("woff"),
         url("fonts/MyriadPro-It.otf") format("opentype"),
+        url("fonts/MyriadPro-It.ttf") format("truetype"),
         url("fonts/MyriadPro-It.eot") format("eot");
-    font-style: normal;
-    font-weight:400;
 }
 
 
@@ -68,6 +67,7 @@ body {
     padding: 0;
     font-family: "Circe", sans-serif;
     font-size: 16px;
+    color: #000;
 }
 
 .relative {
@@ -277,9 +277,13 @@ body {
     left: -40px;
 }
 
-.page-nav > li:hover {
-    color: rgb(2, 74, 156);
+.page-nav > li.active {
     border-color: rgb(2, 74, 156);
+}
+
+.page-nav > li:hover:not(.active) {
+    color: rgba(255, 204, 0, 0.6);
+    border-color: rgba(255, 204, 0, 0.6);
     cursor: pointer;
 }
 
@@ -307,6 +311,28 @@ body {
     transform: translateY(-50%);
 }
 
+.morning-left {
+    position: absolute;
+    top: 320px;
+    left: calc((100% - 1440px) / 2);
+}
+
+.morning-left.fixed {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.morning-left-bg {
+    width: 105px;
+    height: 387px;
+    background: url('img/morning-bag.png') no-repeat;
+
+}
 
 .sections-nav {
     list-style: none;
