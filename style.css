@@ -986,14 +986,14 @@ body {
 }
 
 .rules {
-    margin-bottom: 408px;
+    margin-bottom: 450px;
 }
 
 .next-page {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 32px 50px;
     text-align: right;
     box-sizing: border-box;
 }
