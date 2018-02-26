@@ -5,7 +5,7 @@
       <paths name="clients.recolon.ru">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/cytovir" local="$PROJECT_DIR$" web="/cytovir" />
           </mappings>
         </serverdata>
       </paths>
