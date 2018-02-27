@@ -269,7 +269,7 @@ body {
 
 .page-nav-wrapper {
     position: absolute;
-    top: 90px;
+    top: 32px;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -338,12 +338,6 @@ body {
 
 .sections-nav-wrapper.fixed {
     position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .sections-nav {
@@ -353,19 +347,21 @@ body {
     display: inline-block;
 }
 
-.sections-nav > li {
+.sections-nav > li > a {
     font-size: 1.1em;
     color: rgb(255, 204, 0);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.667;
+    text-decoration: none;
 }
 
-.sections-nav > li.active {
+.sections-nav > li > a.active {
     color: rgb(2, 74, 156);
+    cursor: default;
 }
 
-.sections-nav > li:hover:not(.active) {
+.sections-nav > li:hover > a:not(.active) {
     cursor: pointer;
     color: rgba(255, 204, 0, 0.6);
 }
@@ -382,12 +378,6 @@ body {
 
 .morning-left.fixed {
     position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .morning-left-bg {
@@ -761,7 +751,7 @@ body {
     height: 360px;
     border-radius: 50%;
     background-color: #ffcc00;
-    z-index: -1;
+    z-index: -2;
 }
 
 .myth-1-bg .bg-image {
@@ -771,6 +761,7 @@ body {
     height: 157px;
     top: 121px;
     right: 34.5%;
+    z-index: -1;
 }
 
 .myth-2 {
