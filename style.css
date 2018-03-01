@@ -267,7 +267,9 @@ body {
 
 /* MORNING SECTION ****************************************************************************************************/
 
-.morning {
+.morning,
+.day,
+.evening {
     position: relative;
     padding-top: 271px;
 }
@@ -380,7 +382,7 @@ body {
 }
 
 
-/* MORNING LEFT BG ****************************************************************************************************/
+/* LEFT BG ****************************************************************************************************/
 
 .morning-left {
     position: absolute;
@@ -399,6 +401,12 @@ body {
     height: 387px;
     background: url('img/morning-bag.png') no-repeat;
 
+}
+
+.day-left-bg {
+    width: 105px;
+    height: 387px;
+    background: url('img/day/day.png') no-repeat;
 }
 
 
@@ -476,6 +484,55 @@ body {
     top: 10316px;
 }
 
+/* day things */
+.thing-8 {
+    top: 2505px;
+}
+
+.thing-9 {
+    top: 3698px;
+}
+
+.thing-9 .striped-circle {
+    top: 178px;
+}
+
+
+.thing-10 {
+    top: 4994px;
+}
+
+.thing-11 {
+    top: 6276px;
+}
+
+.thing-411 .striped-circle {
+    top: 14px;
+    left: 280px;
+    z-index: -2;
+}
+
+.thing-11 .left.take-txt {
+    top: 2px;
+    right: 728px;
+}
+
+.thing-12 {
+    top: 7634px;
+}
+
+.thing-13 {
+    top: 8787px;
+}
+
+.thing-13 .left.take-txt {
+    top: 75px;
+    right: 561px;
+}
+
+.thing-14 {
+    top: 10316px;
+}
 
 .bubble {
     position: absolute;
@@ -693,7 +750,65 @@ body {
     z-index: -1;
 }
 
+.headphones {
+    width: 210px;
+    height: 212px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/headphones.jpg) no-repeat;
+    z-index: -1;
+}
 
+.pen {
+    width: 300px;
+    height: 165px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/pen.png) no-repeat;
+    z-index: -1;
+}
+
+.phone {
+    width: 233px;
+    height: 224px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/phone.jpg) no-repeat;
+    z-index: -1;
+}
+
+.balls {
+    width: 248px;
+    height: 213px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/balls.png) no-repeat;
+    z-index: -1;
+}
+
+.mascara {
+    width: 64px;
+    height: 262px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/mascara.png) no-repeat;
+    z-index: -1;
+}
+
+.note {
+    width: 169px;
+    height: 133px;
+    position: absolute;
+    top: 100px;
+    left: 235px;
+    background: url(img/day/note.png) no-repeat;
+    z-index: -1;
+}
 
 /* MORNING ARTICLES ***************************************************************************************************/
 
@@ -1079,6 +1194,281 @@ body {
 .next-page-link:hover {
     text-decoration: underline;
 }
+
+
+
+/* DAY ****************************************************************************************************************/
+
+.day .myths {
+    margin-bottom: 132px;
+}
+
+.day .myth-1 {
+    margin-bottom: 67px;
+}
+
+.day .myth-1 .rectangle {
+    position: absolute;
+    top: 310px;
+    right: 609px;
+    width: 58px;
+    height: 201px;
+    background-color: #ffcc00;
+}
+
+.day .myth-1 .circle {
+    position: absolute;
+    top: 534px;
+    right: 605px;
+    width: 66px;
+    height: 66px;
+    background-color: #ffcc00;
+}
+
+.day .myth-1 .bg-image {
+    position: absolute;
+    top: 65px;
+    right: 374px;
+    width: 343px;
+    height: 296px;
+    background: url('img/day/rest.jpg') no-repeat;
+}
+
+.day .myth-2 {
+    margin-bottom: 134px;
+}
+
+.day .myth-2 .rectangle {
+    height: 455px;
+    top: 87px;
+    left: 650px;
+}
+
+.day .myth-2 .bg-image {
+    position: absolute;
+    top: 87px;
+    right: 374px;
+    width: 650px;
+    height: 455px;
+    background: url('img/day/people.jpg') no-repeat;
+}
+
+.day .myth-3-bg {
+    position: static;
+    overflow: visible;
+}
+
+.day .myth-3 .square {
+    position: absolute;
+    top: 403px;
+    right: 663px;
+    width: 250px;
+    height: 250px;
+    border: solid 60px #ffcc00;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.day .myth-3 .bg-image {
+    position: absolute;
+    top: 162px;
+    right: 0;
+    width: 723px;
+    height: 419px;
+    background: url('img/day/office.jpg') no-repeat;
+    z-index: -2;
+}
+
+
+.day .risks {
+    margin-bottom: 439px;
+}
+
+.day .risk-1 {
+    margin-bottom: 392px;
+}
+
+.day .risk-1 .left-column .article-txt {
+    margin-top: 0;
+}
+
+.day .risk-1 .right-column {
+    padding-top: 247px;
+    margin-left: 0;
+}
+
+.day .risk-1 .rectangle {
+    position: absolute;
+    top: 476px;
+    left: 0;
+    width: 450px;
+    height: 370px;
+    background-color: #ffcc00;
+}
+
+.day .risk-1 .bg-image {
+    position: absolute;
+    top: 244px;
+    right: 0;
+    left: auto;
+    width: 721px;
+    height: 232px;
+    background: url('img/day/office-2.jpg') no-repeat;
+}
+
+.day .risk-2 {
+    margin-bottom: 508px;
+}
+
+.day .risk-2 .right-column {
+    margin-left: 0;
+}
+
+.day .risk-2 .right-column.heading-group {
+    margin-left: 50%;
+}
+
+.day .risk-2 .column .article-txt {
+    margin-top: 0;
+}
+
+.day .risk-2 .bg-image {
+    position: absolute;
+    left: 274px;
+    top: auto;
+    bottom: -262px;
+    width: 550px;
+    height: 366px;
+    background: url("img/day/sandwich.jpg") no-repeat;
+}
+
+.day .risk-2 .circle {
+    top: auto;
+    bottom: -30px;
+}
+
+.day .risk-3 .bg-image {
+    position: absolute;
+    top: 38px;
+    left: auto;
+    right: 155px;
+    width: 593px;
+    height: 565px;
+    background: url("img/day/notebook.jpg");
+}
+
+.day .risk-3 .rectangle {
+    position: absolute;
+    top: 229px;
+    right: 0;
+    left: auto;
+    width: 338px;
+    height: 442px;
+}
+
+.day .rules {
+    margin-bottom: 760px;
+}
+
+.day .rule-1 {
+    margin-bottom: 845px;
+}
+
+.day .rule-1 .bg-image {
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -236px;
+    width: 687px;
+    height: 266px;
+    background: url("img/day/table.jpg") no-repeat;
+    z-index: -2;
+}
+
+.day .rule-1 .rectangle {
+    position: absolute;
+    top: auto;
+    left: 629px;
+    bottom: -297px;
+    width: 148px;
+    height: 148px;
+    z-index: -1;
+    background-color: #ffcc00;
+}
+
+.day .rule-1 .right-column {
+    padding-top: 0;
+}
+
+.day .rule-2 {
+    margin-bottom: 434px;
+}
+
+.day .rule-2 .left-column {
+    padding-top: 214px;
+}
+
+.day .rule-2 .bg-image {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 494px;
+    height: 361px;
+    background: url("img/day/men.jpg") no-repeat;
+}
+
+.day .rule-2 .rectangle {
+    left: -43px;
+    top: -45px;
+}
+
+.day .rule-3 {
+    margin-bottom: 479px;
+}
+
+.day .rule-3 .circle {
+    bottom: -272px;
+    right: 446px;
+}
+
+.day .rule-3 .bg-image {
+    width: 383px;
+    height: 512px;
+    bottom: -329px;
+    left: 294px;
+    position: absolute;
+    background: url("img/day/headphones-big.png") no-repeat;
+}
+
+.day .rule-4 .right-column:not(.heading-group) {
+    margin-left: 0;
+}
+
+.day .rule-4 .article-txt {
+    margin-top: 0;
+}
+
+.day .rule-4 .rectangle {
+    position: absolute;
+    bottom: -558px;
+    right: 748px;
+    width: 225px;
+    height: 663px;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.day .rule-4 .bg-image {
+    position: absolute;
+    bottom: -493px;
+    right: 0;
+    width: 750px;
+    height: 500px;
+    background: url("img/day/lunch.jpg") no-repeat;
+    z-index: -2;
+}
+
+
 
 
 
