@@ -409,6 +409,8 @@ body {
     background: url('img/dots.png') no-repeat;
     min-height: 7875px;
     width: 1440px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 2660px;
 }
 
@@ -416,32 +418,33 @@ body {
     width: 100%;
     max-width: 1000px;
     position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -o-transform: translateX(-45%);
+    transform: translateX(-45%);
 }
 
 .thing-1 {
     top: 2505px;
-    left: 277px;
 }
 
 .thing-2 {
-    top: 3751px;
-    left: 148px;
+    top: 3698px;
 }
 
 .thing-2 .striped-circle {
     top: 178px;
-    left: 420px;
 }
 
 
 .thing-3 {
     top: 4994px;
-    left: 276px;
 }
 
 .thing-4 {
     top: 6276px;
-    left: 292px;
 }
 
 .thing-4 .striped-circle {
@@ -457,12 +460,10 @@ body {
 
 .thing-5 {
     top: 7634px;
-    left: 276px;
 }
 
 .thing-6 {
-    top: 8896px;
-    left: 125px;
+    top: 8787px;
 }
 
 .thing-6 .left.take-txt {
@@ -472,12 +473,13 @@ body {
 
 .thing-7 {
     top: 10316px;
-    left: 279px;
 }
 
 
 .bubble {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 268px;
     height: 268px;
     border-radius: 50%;
@@ -500,13 +502,19 @@ body {
     transform: rotate(8deg);
 }
 
+.bubble-txt-wrapper {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+}
+
 .bubble-txt {
     font-family: "Myriad Pro", sans-serif;
     font-weight: bold;
     font-style: italic;
     position: absolute;
-    left: 15%;
-    right: 15%;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -1356,7 +1364,7 @@ body {
     }
 
     .rules {
-        margin-bottom: 1110px;
+        margin-bottom: 1024px;
     }
 
     .rule-1 {
@@ -1452,23 +1460,164 @@ body {
         font-size: 1.4em;
     }
 
+/* THINGS 760-1200 ******************************************************************************************/
+    .dots-bg {
+        background: url(img/dots-small.png) no-repeat;
+        min-height: 11853px;
+        width: 960px;
+        top: 3614px;
+        background-size: cover;
+    }
+
+    .things {
+        max-width: 760px;
+    }
+
+    .thing-1 {
+        top: 3221px;
+    }
+
+    .bubble {
+        top: 0;
+        left: auto;
+        right: 154px;
+    }
+
+    .striped-circle {
+        top: 318px;
+        left: 192px;
+    }
+
+    .glasses {
+        top: 355px;
+        left: 72px;
+    }
+
+    .take-txt {
+        top: 307px;
+        left: 338px;
+        right: auto;
+    }
+
+    .left.take-txt {
+        left: auto;
+    }
+
+    .bubble::after {
+        top: 202px;
+        left: 2px;
+        transform: rotate(100deg);
+    }
+
+    .thing-2 {
+        top: 5136px;
+       /* left: 54px;*/
+    }
+
+    .left.take-txt::before {
+        left: auto;
+        right: 0;
+    }
+
+    .left.take-txt::after {
+        left: auto;
+        right: 0;
+    }
+
+    .thing-2 .striped-circle {
+        left: auto;
+        right: 269px;
+    }
+
+    .umbrella {
+        left: auto;
+        right: 92px;
+    }
+
+    .thing-2 .left.take-txt {
+        right: 424px;
+       /* left: auto;*/
+    }
+
+    .thing-3 {
+        top: 6448px;
+    }
+
+    .comb {
+        top: 287px;
+        left: 123px;
+    }
+
+    .thing-4 {
+        top: 8886px;
+    }
+
+    .spirits {
+        left: 394px;
+    }
+
+    .thing-4 .striped-circle {
+        left: 343px;
+    }
+
+    .thing-4 .left.take-txt {
+        right: 424px;
+    }
+
+    .thing-5 {
+        top: 10653px;
+    }
+
+    .water {
+        top: 268px;
+        left: 152px;
+    }
+
+    .thing-5 .take-txt {
+        right: 272px;
+    }
+
+    .thing-6 {
+        top: 12803px;
+    }
+
+    .thing-6 .striped-circle {
+        left: auto;
+        right: 266px;
+    }
+
+    .cytovir {
+        top: 292px;
+        left: auto;
+        right: 162px;
+    }
+
+    .thing-6 .left.take-txt {
+        top: 307px;
+        left: 186px;
+        right: auto;
+    }
+
+    .thing-7 {
+        top: 14766px;
+    }
+
+    .thing-7 .striped-circle {
+        left: 188px;
+        right: auto;
+    }
+
+    .keys {
+        top: 329px;
+        left: -20px;
+    }
 
 
+    .next-page {
+        padding: 0 120px 150px;
+    }
 
 
-
-
-
-
-
-
-
-    /* .dots-bg {
-         background: url('img/dots-small.png') no-repeat;
-         min-height: 11748px;
-         width: 760px;
-         top: 2660px;
-     }*/
 }
 
 
