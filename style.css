@@ -602,7 +602,6 @@ body {
     top: -4px;
     left: 114px;
     color: #fff;
-    font-size: 2em;
 }
 
 .take:hover .take-txt {
@@ -1365,7 +1364,7 @@ body {
     }
 
     .rules {
-        margin-bottom: 1024px;
+        margin-bottom: 1054px;
     }
 
     .rule-1 {
@@ -1440,7 +1439,8 @@ body {
 
     .rule-3-bg .bg-image {
         bottom: -505px;
-        left: 60px;
+        left: auto;
+        right: 260px;
     }
 
     .about {
@@ -1794,12 +1794,18 @@ body {
         margin-bottom: 600px;
     }
 
+    .rule-3 .bg-image {
+        width: 300px;
+        background-size: contain;
+        left: 20%;
+    }
+
     .rule-3-bg .circle {
-        bottom: -758px;
+        bottom: -700px;
     }
 
     .about {
-        bottom: -620px;
+        bottom: -568px;
     }
 
 
