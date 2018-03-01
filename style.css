@@ -387,6 +387,7 @@ body {
     top: 265px;
     padding-left: 42px;
     left: calc((100% - 1440px) / 2);
+    z-index: -1;
 }
 
 .morning-left.fixed {
@@ -1511,7 +1512,6 @@ body {
 
     .thing-2 {
         top: 5136px;
-       /* left: 54px;*/
     }
 
     .left.take-txt::before {
@@ -1536,7 +1536,6 @@ body {
 
     .thing-2 .left.take-txt {
         right: 424px;
-       /* left: auto;*/
     }
 
     .thing-3 {
@@ -1612,15 +1611,213 @@ body {
         left: -20px;
     }
 
-
     .next-page {
         padding: 0 120px 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 759px) {
+
+    .things,
+    .dots-bg {
+        display: none;
+    }
+
+    .logo-img {
+        width: 60px;
+    }
+
+    .intro {
+        min-height: 800px;
+    }
+
+    .intro-wrapper {
+        background-size: 250px auto;
+       /* background-position: 50% 56px;*/
+    }
+
+    .intro-wrapper-relative {
+        padding: 20px 0 0;
+    }
+
+    .intro-bottom-bg {
+        width: 300px;
+    }
+
+    .intro-bottom-bg {
+        top: 95px;
+    }
+
+    .intro-bg-shadow {
+        margin-top: -86px;
+    }
+
+    .project-label {
+        margin-bottom: 300px;
+        font-size: 0.7em;
+    }
+
+    .intro-text {
+        font-size: 1.2em;
+    }
+
+    .style-txt {
+        margin: 0 20px;
+    }
+
+    .links-wrapper {
+        max-width: 300px;
+    }
+
+    .section-link-list > li + li {
+        margin-left: 6px;
+    }
+
+    .section-link-list > li {
+        vertical-align: middle;
+    }
+
+    .section-link-list > li > a,
+    .page-nav > li> a {
+        font-size: 1em;
+        line-height: 1em;
+        width: 80px;
+        padding: 6px 0;
+    }
+
+    .page-nav > li + li:before {
+        top: 14px;
+        left: -22px;
+    }
+
+    .morning {
+        padding-top: 110px;
+    }
+
+    .morning-left-bg {
+        width: 50px;
+    }
+
+    .central-txt {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        margin-bottom: 54px;
+    }
+
+    .section-heading {
+        font-size: 2.2em;
+        margin: 0 auto 16px;
+    }
+
+    .article-heading {
+        font-size: 1.5em;
+    }
+
+    .article-subtitle {
+        font-size: 1.4em;
+        line-height: 1.2em;
+    }
+
+    .article-subtitle_small {
+        padding-right: 0;
+    }
+
+    .article-txt {
+        font-size: 1.2em;
+    }
+
+    .left-column {
+        padding-right: 0;
+    }
+
+    .myths {
+        margin-bottom: 100px;
+    }
+
+    .myth-2 {
+        margin-bottom: 510px;
+    }
+
+    .myth-2 .rectangle {
+        width: 116px;
+        top: 273px;
+    }
+
+    .myth-2-bg .bg-image {
+        top: 380px;
+    }
+
+    .risks {
+        margin-bottom: 680px;
+    }
+
+    .risk-1 {
+        margin-bottom: 100px;
+    }
+
+    .risk-1-bg .rectangle {
+        top: 208px;
+        width: 292px;
+    }
+
+    .risk-1-bg .bg-image {
+        display: none;
+    }
+
+    .risk-2 {
+        margin-bottom: 250px;
+    }
+
+    .risk-2-bg .bg-image {
+        top: 500px;
+        left: 32px;
+        max-width: 656px;
+        background-size: contain;
+        width: 100%;
+    }
+
+    .risk-3-bg .bg-image {
+        left: 0;
+    }
+
+    .rules {
+        margin-bottom: 800px;
+    }
+
+    .rule-1 {
+        margin-bottom: 800px;
+    }
+
+    .rule-2 {
+        margin-bottom: 600px;
+    }
+
+    .rule-3-bg .circle {
+        bottom: -758px;
+    }
+
+    .about {
+        bottom: -620px;
     }
 
 
 }
 
+@media screen and (max-width: 479px) {
+    .rule-1 {
+        margin-bottom: 700px;
+    }
+}
 
+
+@media screen and (max-width: 410px) {
+    .rule-1 {
+        margin-bottom: 476px;
+    }
+}
 
 
 
