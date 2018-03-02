@@ -397,8 +397,8 @@ body {
 }
 
 .morning-left-bg {
-    width: 105px;
-    height: 387px;
+    width: 124px;
+    height: 392px;
     background: url('img/morning-bag.png') no-repeat;
 
 }
@@ -409,6 +409,11 @@ body {
     background: url('img/day/day.png') no-repeat;
 }
 
+.evening-left-bg {
+    width: 103px;
+    height: 402px;
+    background: url('img/evening/evening.png') no-repeat;
+}
 
 
 /* THINGS TO COLLECT **************************************************************************************************/
@@ -1499,7 +1504,342 @@ body {
 
 
 
+/* EVENING PAGE *******************************************************************************************************/
 
+.evening .central-txt {
+    margin-bottom:85px;
+}
+
+.evening .myths {
+    margin-bottom: 356px;
+}
+
+
+.evening .myth-1 {
+    margin-bottom: 133px;
+}
+
+.moon {
+    position: absolute;
+    top: 2px;
+    right: 475px;
+    width: 344px;
+    height: 393px;
+    overflow: hidden;
+    z-index: -3;
+}
+
+.moon .circle1 {
+    width: 393px;
+    height: 393px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+
+.moon .circle2 {
+    width: 350px;
+    height: 353px;
+    position: absolute;
+    right: -124px;
+    top: -18px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.evening .myth-1 .bg-image {
+    position: absolute;
+    top: 219px;
+    right: 392px;
+    width: 298px;
+    height: 138px;
+    background: url(img/evening/sofa.png) no-repeat;
+    z-index: -1;
+}
+
+
+.evening .myth-2 {
+    margin-bottom: 136px;
+}
+
+.evening .myth-2-bg .rectangles {
+    position: absolute;
+    bottom: 86px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.evening .myth-2-bg .rectangle.left {
+    position: absolute;
+    left: -81px;
+    top: auto;
+    bottom: 0;
+    width: 348px;
+    height: 228px;
+    background-color: #ffcc00;
+}
+
+.evening .myth-2-bg .rectangle.right {
+    position: absolute;
+    left: 692px;
+    top: auto;
+    bottom: 0;
+    width: 410px;
+    height: 228px;
+    background-color: #ffcc00;
+}
+
+.evening .myth-2-bg .rectangle.center {
+    position: absolute;
+    left: 237px;
+    top: auto;
+    bottom: 0;
+    width: 455px;
+    height: 228px;
+    background-color: transparent;
+    border: solid 30px #ffcc00;
+    box-sizing: border-box;
+}
+
+.evening .myth-2-bg .rectangle-small {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 416px;
+    width: 107px;
+    height: 228px;
+    background-color: transparent;
+    border: solid 20px #ffcc00;
+    box-sizing: border-box;
+}
+
+.evening .myth-2 .bg-image {
+    position: absolute;
+    top: auto;
+    bottom: 114px;
+    left: 152px;
+    right: auto;
+    width: 600px;
+    height: 400px;
+    background: url(img/evening/woman-master.jpg) no-repeat;
+    z-index: -3;
+}
+
+.evening .myth-3-bg .circle {
+    position: absolute;
+    right: 563px;
+    bottom: -5px;
+    width: 238px;
+    height: 238px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.evening .myth-3 .bg-image {
+    position: absolute;
+    bottom: 92px;
+    right: 108px;
+    width: 652px;
+    height: 435px;
+    background: url("img/evening/woman-sport.jpg") no-repeat;
+    z-index: -3;
+}
+
+.evening  .risks {
+    margin-bottom: 265px;
+}
+
+.evening .risk-1 {
+    margin-bottom: 85px;
+}
+
+.evening .risk-1-bg .bg-image {
+    position: absolute;
+    right: 0;
+    top: -22px;
+    width: 469px;
+    height: 500px;
+    background: url("img/evening/woman-fat.jpg") no-repeat;
+}
+
+.evening .risk-2 {
+    margin-bottom: 388px;
+}
+
+.evening .risk-2 .bg-image {
+    position: absolute;
+    top: 105px;
+    left: 438px;
+    width: 323px;
+    height: 462px;
+    background: url("img/evening/woman-stress.jpg") no-repeat;
+    z-index: -3;
+}
+
+.evening .risk-2 .rectangle {
+    position: absolute;
+    top: -14px;
+    left: 193px;
+    width: 384px;
+    height: 396px;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.evening .risk-3 .circle {
+    position: absolute;
+    top: -61px;
+    right: -316px;
+    width: 664px;
+    height: 664px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.evening .risk-3 .bg-image {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: auto;
+    width: 698px;
+    height: 390px;
+    background: url("img/evening/woman-rest.jpg") no-repeat;
+    z-index: -3;
+}
+
+.evening .rules {
+    margin-bottom: 900px;
+}
+
+.evening .rule-1 {
+    margin-bottom: 762px;
+}
+
+.evening .rule-1 .right-column {
+    padding-top: 0;
+}
+
+.evening .rule-1 .bg-image {
+    position: absolute;
+    top: auto;
+    bottom: -324px;
+    left: 428px;
+    width: 186px;
+    height: 410px;
+    background: url("img/evening/woman-bike.png") no-repeat;
+    z-index: -1;
+}
+
+.evening .rule-1 .circle {
+    position: absolute;
+    bottom: -389px;
+    left: 202px;
+    top: auto;
+    width: 652px;
+    height: 210px;
+    background-color: #ffcc00;
+    z-index: -3;
+}
+
+.evening .rule-2 {
+    margin-bottom: 172px;
+}
+
+.evening .rule-2 .right-column {
+    margin-left: 50%;
+}
+
+.evening .rule-2 .rectangle {
+    position: absolute;
+    top: -43px;
+    left: -44px;
+    width: 225px;
+    height: 663px;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.evening .rule-2 .bg-image {
+    position: absolute;
+    top: 28px;
+    left: 276px;
+    width: 383px;
+    height: 369px;
+    background: url("img/evening/dog.jpg") no-repeat;
+    z-index: -3;
+}
+
+.evening .rule-3 {
+    margin-bottom: 264px;
+}
+
+.evening .rule-3 .rectangle {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    left: auto;
+    width: 698px;
+    height: 590px;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.evening .rule-3 .bg-image {
+    position: absolute;
+    top: 590px;
+    right: 320px;
+    left: auto;
+    width: 436px;
+    height: 291px;
+    background: url("img/evening/fish.jpg") no-repeat;
+    z-index: -3;
+}
+
+.evening .rule-4 .article-txt {
+    margin-top: 0;
+}
+
+.evening .rule-4 .right-column:not(.heading-group) {
+    margin-left: 0;
+}
+
+.star {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 704px;
+    height: 670px;
+    background: url("img/evening/star.png") no-repeat;
+    z-index: -1;
+}
+
+.evening .rule-4-bg .circle {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -565px;;
+    right: 448px;
+    background-color: #ffcc00;
+    z-index: -1;
+}
+
+.evening .rule-4-bg .bg-image {
+    width: 404px;
+    height: 441px;
+    background: url(img/cytovir.png) no-repeat;
+    position: absolute;
+    bottom: -438px;
+    left: 357px;
+    z-index: -1;
+}
+
+.evening .about {
+    bottom: -452px;
+    right: 484px;
+}
 
 /* MEDIA **************************************************************************************************************/
 
