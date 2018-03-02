@@ -259,10 +259,14 @@ body {
 }
 
 
-
-
 .sections {
     position: relative;
+}
+
+.myths,
+.risks,
+.rules {
+    padding-top: 120px;
 }
 
 /* MORNING SECTION ****************************************************************************************************/
@@ -965,7 +969,7 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 0 10px;
-    margin: 0 auto 116px;
+    margin: 0 auto 0;
     font-size: 1.5em;
     line-height: 1.36em;
 }
@@ -1102,12 +1106,12 @@ body {
 }
 
 .myths {
-    margin-bottom: 466px;
+    margin-bottom: 346px;
 }
 
 
 .risks {
-    margin-bottom: 595px;
+    margin-bottom: 475px;
 }
 
 .risk-1 {
@@ -1351,7 +1355,7 @@ body {
 /* DAY ****************************************************************************************************************/
 
 .day .myths {
-    margin-bottom: 496px;
+    margin-bottom: 367px;
 }
 
 .day .myth-1 {
@@ -1427,7 +1431,7 @@ body {
 
 
 .day .risks {
-    margin-bottom: 440px;
+    margin-bottom: 320px;
 }
 
 .day .risk-1 {
@@ -1618,12 +1622,14 @@ body {
 
 /* EVENING PAGE *******************************************************************************************************/
 
+/*
 .evening .central-txt {
     margin-bottom:85px;
 }
+*/
 
 .evening .myths {
-    margin-bottom: 356px;
+    margin-bottom: 236px;
 }
 
 
@@ -1758,8 +1764,8 @@ body {
     z-index: -3;
 }
 
-.evening  .risks {
-    margin-bottom: 265px;
+.evening .risks {
+    margin-bottom: 136px;
 }
 
 .evening .risk-1 {
@@ -1822,7 +1828,7 @@ body {
 }
 
 .evening .rules {
-    margin-bottom: 900px;
+    margin-bottom: 780px;
 }
 
 .evening .rule-1 {
