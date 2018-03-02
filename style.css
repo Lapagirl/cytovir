@@ -612,7 +612,7 @@ body {
 }
 
 .take:hover {
-    cursor: pointer;
+    cursor: url('img/cursor-img.png'), pointer;
 }
 
 .take-txt {
@@ -623,7 +623,6 @@ body {
     color: rgba(0, 0, 0, 0.4);
     line-height: 1.625;
     padding: 0 0 0 50px;
-
 }
 
 .take-txt::before {
@@ -951,7 +950,7 @@ body {
     margin: 0;
 }
 
-.myth-3-bg {
+.morning .myth-3-bg {
     position: absolute;
     width: 840px;
     height: 278px;
@@ -962,7 +961,7 @@ body {
     padding: 40px;
 }
 
-.myth-3-bg .sun {
+.morning .myth-3-bg .sun {
     width: 860px;
     height: 860px;
     background-color: #ffcc00;
@@ -1221,7 +1220,7 @@ body {
 /* DAY ****************************************************************************************************************/
 
 .day .myths {
-    margin-bottom: 136px;
+    margin-bottom: 496px;
 }
 
 .day .myth-1 {
@@ -1274,10 +1273,10 @@ body {
     background: url('img/day/people.jpg') no-repeat;
 }
 
-.day .myth-3-bg {
+/*.day .myth-3-bg {
     position: static;
     overflow: visible;
-}
+}*/
 
 .day .myth-3 .square {
     position: absolute;
