@@ -1899,6 +1899,138 @@ body {
     right: 484px;
 }
 
+
+
+/* POPUP **************************************************************************************************************/
+
+.popup {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    box-shadow: 20px 30px 60px 0 #dbdbdb;;
+    background-color: #ffcc00;
+    padding: 57px 89px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.popup.show {
+    display: block;
+    position: fixed;
+    z-index: 100;
+}
+
+.popup-content {
+    position: relative;
+    margin-top: 214px;
+}
+
+.attention-heading {
+    font-family: "Circe Bold", sans-serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: 46px;
+}
+
+.take-1 {
+    text-align: right;
+    margin-top: 18px;
+}
+
+.take-txt-1 {
+    padding-right: 56px;
+    position: relative;
+}
+
+.take-txt-1::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.take-txt-1::after {
+    content: "+";
+    line-height: 40px;
+    width: 36px;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    color: #fff;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+
+
+/*.popup .take {
+    margin-top: 17px;
+}
+
+.popup .left.take-txt {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 150px;
+}
+
+.popup .left.take-txt::before {
+    top: -6px;
+}
+
+.popup .left.take-txt::after {
+    top: -5px;
+}*/
+
+/*.take-1 {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin-left: auto;
+    display: inline-block;
+}*/
+
+
+
+
+.cytovir-img {
+    position: absolute;
+    top: -324px;
+    left: 50%;
+    width: 277px;
+    height: 294px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url("img/cytovir.png") no-repeat;
+    background-size: contain;
+}
+
+.attention-txt {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+
 /* MEDIA **************************************************************************************************************/
 
 @media screen and (max-width: 1456px) {
