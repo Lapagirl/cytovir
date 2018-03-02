@@ -428,6 +428,20 @@ body {
     top: 2660px;
 }
 
+.day .dots-bg {
+    background: url("img/day/dots-day.png") no-repeat;
+    top: 2850px;
+    min-height: 8734px;
+}
+
+.evening .dots-bg {
+    background: url("img/evening/dots-evening.png") no-repeat;
+    top: 2856px;
+    min-height: 6980px;
+}
+
+
+
 .things {
     width: 100%;
     max-width: 1000px;
@@ -559,6 +573,38 @@ body {
 .thing-14 .take-txt {
     right: 248px;
 }
+
+.thing-15 {
+    top: 2708px;
+}
+
+.thing-15 .bubble {
+    top: -70px;
+    left: 10px;
+}
+
+.thing-16 {
+    top: 4418px;
+}
+
+.thing-16 .striped-circle {
+    left: 304px;
+}
+
+.thing-16 .cytovir {
+    left: 370px;
+}
+
+.thing-16 .left.take-txt {
+    top: 73px;
+    right: 705px;
+}
+
+.thing-17 {
+    top: 6406px;
+}
+
+
 
 .bubble {
     position: absolute;
@@ -834,6 +880,27 @@ body {
     background: url(img/day/note.png) no-repeat;
     z-index: -1;
 }
+
+.chocolate {
+    position: absolute;
+    top: 119px;
+    left: 350px;
+    width: 220px;
+    height: 157px;
+    background: url("img/evening/chocolate.jpg") no-repeat;
+    z-index: -3;
+}
+
+.powerbank {
+    position: absolute;
+    top: 77px;
+    left: 387px;
+    width: 151px;
+    height: 148px;
+    background: url("img/evening/powerbank.png") no-repeat;
+    z-index: -3;
+}
+
 
 /* MORNING ARTICLES ***************************************************************************************************/
 
@@ -1491,15 +1558,6 @@ body {
     height: 500px;
     background: url("img/day/lunch.jpg") no-repeat;
     z-index: -2;
-}
-
-
-/* THINGS FOR THE DAY PAGE *********************************************/
-
-.day .dots-bg {
-    background: url("img/day/dots-day.png") no-repeat;
-    top: 2850px;
-    min-height: 8734px;
 }
 
 
