@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="cytovir.recolon.local">
     <serverData>
       <paths name="clients.recolon.ru">
         <serverdata>
           <mappings>
             <mapping deploy="/cytovir" local="$PROJECT_DIR$" web="/cytovir" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cytovir.recolon.local">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

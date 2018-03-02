@@ -751,75 +751,131 @@ body {
     z-index: -2;
 }
 
-.glasses {
+.glasses,
+.glasses-shadow {
     width: 324px;
     height: 140px;
     position: absolute;
     top: 122px;
     left: 323px;
+}
+
+.glasses {
     background: url(img/glasses.png) no-repeat;
 }
 
-.umbrella {
+.glasses-shadow {
+    background: url(img/glasses-shadow.png) no-repeat;
+}
+
+.umbrella,
+.umbrella-shadow {
     width: 333px;
     height: 333px;
     position: absolute;
     top: 64px;
     left: 412px;
-    background: url(img/umbrella.png) no-repeat;
     z-index: -3;
 }
 
-.comb {
+.umbrella {
+    background: url(img/umbrella.png) no-repeat;
+}
+
+.umbrella-shadow {
+    background: url(img/umbrella-shadow.png);
+}
+
+.comb,
+.comb-shadow {
     width: 244px;
     height: 208px;
     position: absolute;
     top: 58px;
     left: 376px;
-    background: url(img/comb.png) no-repeat;
     z-index: -1;
 }
 
-.spirits {
+.comb {
+    background: url(img/comb.png) no-repeat;
+}
+
+.comb-shadow {
+    background: url(img/comb-shadow.png) no-repeat;
+}
+
+.spirits,
+.spirits-shadow {
     width: 181px;
     height: 213px;
     position: absolute;
     top: 14px;
     left: 329px;
-    background: url(img/spirits.png) no-repeat;
     box-shadow: inset 0 -10px 20px 0 #fff;
     z-index: -1;
 }
 
-.water {
+.spirits {
+    background: url(img/spirits.png) no-repeat;
+}
+
+.spirits-shadow {
+    background: url(img/spirits-shadow.png) no-repeat;
+}
+
+.water,
+.water-shadow {
     width: 194px;
     height: 253px;
     position: absolute;
     top: 34px;
     left: 406px;
-    background: url(img/water.png) no-repeat;
     z-index: -1;
 }
 
-.cytovir {
+.water {
+    background: url(img/water.png) no-repeat;
+}
+
+.water-shadow {
+    background: url(img/water-shadow.png) no-repeat;
+}
+
+.cytovir,
+.cytovir-shadow {
     width: 186px;
     height: 210px;
     position: absolute;
     top: 59px;
     left: 515px;
-    background: url(img/cytovir.png) no-repeat;
-    background-size: contain;
     z-index: -1;
 }
 
-.keys {
+.cytovir {
+    background: url(img/cytovir.png) no-repeat;
+    background-size: contain;
+}
+
+.cytovir-shadow {
+    background: url(img/cytovir-shadow.png) no-repeat;
+}
+
+.keys,
+.keys-shadow {
     width: 360px;
     height: 245px;
     position: absolute;
     top: 100px;
     left: 235px;
-    background: url(img/keys.png) no-repeat;
     z-index: -1;
+}
+
+.keys {
+    background: url(img/keys.png) no-repeat;
+}
+
+.keys-shadow {
+    background: url(img/keys-shadow.png);
 }
 
 .headphones {
@@ -1347,11 +1403,6 @@ body {
     height: 455px;
     background: url('img/day/people.jpg') no-repeat;
 }
-
-/*.day .myth-3-bg {
-    position: static;
-    overflow: visible;
-}*/
 
 .day .myth-3 .square {
     position: absolute;

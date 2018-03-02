@@ -374,8 +374,6 @@
         });
 
 
-
-
         //Scroll to section
         $('.sections-nav').click('li', function (event) {
             $(this).find('a').removeClass('active');
@@ -440,69 +438,6 @@
                 morningLeft.removeClass('fixed');
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-        /*$(window).scroll(function(e){
-            var toDocHeight = $(".bg").offset().top;      //Расстояние от начала документа до блока
-
-            if($(window).offset().top > toDocHeight) {
-            parallaxScroll();
-            }
-        });
-
-        function parallaxScroll() {
-            var scrolled = $(window).scrollTop();
-            $('.bg').css('top',(0-(scrolled*0.75))+'px');
-        }*/
-
-
-
-
-
-
-
-
-        //Scroll
-
-       /* var toParrentHeight = $('.circle').position().top;    //Расстояние от родителя
-        var winHeight = $(window).height();     //Высота окна браузера
-
-        console.log('Расстояние от начала документа: ' + toDocHeight);
-        console.log('Расстояние от родителя: ' + toParrentHeight);
-        console.log('Высота окна браузера '+ winHeight);
-
-
-        var fromTopPosition = (toDocHeight + winHeight*0.2);
-        var toTopPosition = (toDocHeight - winHeight*0.2);
-
-        console.log('От: ' + fromTopPosition);
-        console.log('До: ' + toTopPosition);*/
-
-
-       /* $(".circle").attr('data-'+ toTopPosition, 'top: ' + toParrentHeight + 'px');
-        $('.circle').attr('data-'+ fromTopPosition, 'top: '+(toParrentHeight - 200) + 'px');*/
-
-       /* $(window).scroll(function () {
-            $('.bg').css('top', (newTopPosition * 0.75) + 'px');
-        });*/
-
-      /*  $(window).scroll(function () {
-            var scrolled = $(window).scrollTop();
-
-            if($(window).offset().top < toDocHeight) {
-                $('.bg').css('top', (0 - (scrolled * 0.75)) + 'px');
-            }
-        });*/
 
     });
 
