@@ -315,6 +315,7 @@ body {
     text-align: center;
     border-radius: 25px;
     box-sizing: border-box;
+    background: #fff;
 }
 
 .page-nav > li + li {
@@ -930,14 +931,14 @@ body {
     height: 459px;
     background-color: #ffcc00;
     position: absolute;
-    top: 84px;
+    top: 44px;
     left: 666px;
     z-index: -1;
 }
 
 .myth-2-bg .bg-image {
     position: absolute;
-    top: 84px;
+    top: 44px;
     left: 0;
     width: 843px;
     height: 459px;
@@ -953,10 +954,10 @@ body {
 .morning .myth-3-bg {
     position: absolute;
     width: 840px;
-    height: 278px;
+    height: 420px;
     overflow: hidden;
     z-index: -1;
-    top: 116px;
+    top: 10px;
     right: 0;
     padding: 40px;
 }
@@ -968,6 +969,8 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 30px 20px #ffcc00;
     box-sizing: border-box;
+    top: 110px;
+    position: relative;
 }
 
 .myths {
@@ -1756,13 +1759,13 @@ body {
     }
 
     .risk-2-bg .bg-image {
-        top: 639px;
+        top: 489px;
         left: 71px;
     }
 
     .risk-2-bg .circle {
         position: absolute;
-        top: 488px;
+        top: 338px;
         left: 548px;
     }
 
@@ -2190,11 +2193,13 @@ body {
     }
 
     .risk-2-bg .bg-image {
-        top: 500px;
+        top: 350px;
         left: 32px;
         max-width: 656px;
         background-size: contain;
         width: 100%;
+        height: 300px;
+        background-position: 70%;
     }
 
     .risk-3-bg .bg-image {
