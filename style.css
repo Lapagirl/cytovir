@@ -486,52 +486,73 @@ body {
 
 /* day things */
 .thing-8 {
-    top: 2505px;
+    top: 2696px;
 }
 
 .thing-9 {
-    top: 3698px;
+    top: 4102px;
 }
 
 .thing-9 .striped-circle {
     top: 178px;
+    left: 302px;
+}
+
+.thing-9 .left.take-txt {
+    right: 706px;
 }
 
 
 .thing-10 {
-    top: 4994px;
+    top: 5314px;
 }
 
 .thing-11 {
-    top: 6276px;
+    top: 6374px;
 }
 
-.thing-411 .striped-circle {
-    top: 14px;
-    left: 280px;
-    z-index: -2;
+.thing-11 .striped-circle {
+    left: 304px;
+}
+
+.thing-11 .cytovir {
+    left: 372px;
 }
 
 .thing-11 .left.take-txt {
-    top: 2px;
-    right: 728px;
+    top: 71px;
+    right: auto;
+    left: 148px;
 }
 
 .thing-12 {
-    top: 7634px;
+    top: 7778px;
 }
 
 .thing-13 {
-    top: 8787px;
+    top: 8874px;
 }
 
 .thing-13 .left.take-txt {
     top: 75px;
-    right: 561px;
+    right: auto;
+    left: 148px;
+}
+
+.thing-13 .striped-circle {
+    left: 306px;
 }
 
 .thing-14 {
-    top: 10316px;
+    top: 11546px;
+}
+
+.thing-14 .striped-circle {
+    left: 456px;
+}
+
+.thing-14 .take-txt {
+    right: 248px;
 }
 
 .bubble {
@@ -754,30 +775,30 @@ body {
     width: 210px;
     height: 212px;
     position: absolute;
-    top: 100px;
-    left: 235px;
+    top: 80px;
+    left: 327px;
     background: url(img/day/headphones.jpg) no-repeat;
-    z-index: -1;
+    z-index: -3;
 }
 
 .pen {
     width: 300px;
     height: 165px;
     position: absolute;
-    top: 100px;
-    left: 235px;
+    top: 137px;
+    left: 280px;
     background: url(img/day/pen.png) no-repeat;
-    z-index: -1;
+    z-index: -3;
 }
 
 .phone {
     width: 233px;
     height: 224px;
     position: absolute;
-    top: 100px;
-    left: 235px;
+    top: 45px;
+    left: 333px;
     background: url(img/day/phone.jpg) no-repeat;
-    z-index: -1;
+    z-index: -3;
 }
 
 .balls {
@@ -785,7 +806,7 @@ body {
     height: 213px;
     position: absolute;
     top: 100px;
-    left: 235px;
+    left: 314px;
     background: url(img/day/balls.png) no-repeat;
     z-index: -1;
 }
@@ -794,8 +815,8 @@ body {
     width: 64px;
     height: 262px;
     position: absolute;
-    top: 100px;
-    left: 235px;
+    top: 0;
+    left: 400px;
     background: url(img/day/mascara.png) no-repeat;
     z-index: -1;
 }
@@ -804,8 +825,8 @@ body {
     width: 169px;
     height: 133px;
     position: absolute;
-    top: 100px;
-    left: 235px;
+    top: 56px;
+    left: 365px;
     background: url(img/day/note.png) no-repeat;
     z-index: -1;
 }
@@ -1200,11 +1221,11 @@ body {
 /* DAY ****************************************************************************************************************/
 
 .day .myths {
-    margin-bottom: 132px;
+    margin-bottom: 136px;
 }
 
 .day .myth-1 {
-    margin-bottom: 67px;
+    margin-bottom: 70px;
 }
 
 .day .myth-1 .rectangle {
@@ -1235,7 +1256,7 @@ body {
 }
 
 .day .myth-2 {
-    margin-bottom: 134px;
+    margin-bottom: 138px;
 }
 
 .day .myth-2 .rectangle {
@@ -1281,11 +1302,11 @@ body {
 
 
 .day .risks {
-    margin-bottom: 439px;
+    margin-bottom: 440px;
 }
 
 .day .risk-1 {
-    margin-bottom: 392px;
+    margin-bottom: 398px;
 }
 
 .day .risk-1 .left-column .article-txt {
@@ -1317,7 +1338,7 @@ body {
 }
 
 .day .risk-2 {
-    margin-bottom: 508px;
+    margin-bottom: 514px;
 }
 
 .day .risk-2 .right-column {
@@ -1371,7 +1392,7 @@ body {
 }
 
 .day .rule-1 {
-    margin-bottom: 845px;
+    margin-bottom: 850px;
 }
 
 .day .rule-1 .bg-image {
@@ -1401,7 +1422,7 @@ body {
 }
 
 .day .rule-2 {
-    margin-bottom: 434px;
+    margin-bottom: 424px;
 }
 
 .day .rule-2 .left-column {
@@ -1423,7 +1444,7 @@ body {
 }
 
 .day .rule-3 {
-    margin-bottom: 479px;
+    margin-bottom: 496px;
 }
 
 .day .rule-3 .circle {
@@ -1450,8 +1471,8 @@ body {
 
 .day .rule-4 .rectangle {
     position: absolute;
-    bottom: -558px;
-    right: 748px;
+    bottom: -613px;
+    right: 721px;
     width: 225px;
     height: 663px;
     background-color: #ffcc00;
@@ -1460,12 +1481,21 @@ body {
 
 .day .rule-4 .bg-image {
     position: absolute;
-    bottom: -493px;
-    right: 0;
+    bottom: -551px;
+    right: -28px;
     width: 750px;
     height: 500px;
     background: url("img/day/lunch.jpg") no-repeat;
     z-index: -2;
+}
+
+
+/* THINGS FOR THE DAY PAGE *********************************************/
+
+.day .dots-bg {
+    background: url("img/day/dots-day.png") no-repeat;
+    top: 2850px;
+    min-height: 8734px;
 }
 
 
