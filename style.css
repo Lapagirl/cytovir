@@ -954,10 +954,10 @@ body {
 .morning .myth-3-bg {
     position: absolute;
     width: 840px;
-    height: 420px;
+    height: 500px;
     overflow: hidden;
     z-index: -1;
-    top: 10px;
+    top: -60px;
     right: 0;
     padding: 40px;
 }
@@ -969,7 +969,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 30px 20px #ffcc00;
     box-sizing: border-box;
-    top: 110px;
+    top: 190px;
     position: relative;
 }
 
@@ -1162,7 +1162,7 @@ body {
     height: 480px;
     border-radius: 50%;
     position: absolute;
-    bottom: -284px;
+    bottom: -230px;
     right: 437px;
     background-color: #ffcc00;
     z-index: -1;
@@ -1173,7 +1173,7 @@ body {
     height: 441px;
     background: url(img/cytovir.png) no-repeat;
     position: absolute;
-    bottom: -155px;
+    bottom: -100px;
     left: 306px;
     z-index: -1;
 }
