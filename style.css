@@ -1810,7 +1810,7 @@ body {
         background-color: #ffcc00;
         z-index: -1;
         position: absolute;
-        top: 1560px;
+        top: 1640px;
         right: 0;
     }
 
@@ -2042,6 +2042,8 @@ body {
 
 @media screen and (max-width: 759px) {
 
+     [data-jarallax-element] { transform: none !important; }
+
     .things,
     .dots-bg {
         display: none;
@@ -2158,6 +2160,8 @@ body {
         margin-bottom: 100px;
     }
 
+    .myth-1-bg .circle{ top:230px;}
+    .myth-1-bg .bg-image{ top:423px;}
     .myth-2 {
         margin-bottom: 510px;
     }
@@ -2170,6 +2174,8 @@ body {
     .myth-2-bg .bg-image {
         top: 380px;
     }
+
+    .morning .myth-3-bg{top: -60px;                transform: scale(.6);                transform-origin: 100% 50%;                right: -150px;}
 
     .risks {
         margin-bottom: 680px;
@@ -2213,7 +2219,7 @@ body {
     .rule-1 {
         margin-bottom: 800px;
     }
-
+        .rule-1 .rectangle {top: 1450px;}
     .rule-2 {
         margin-bottom: 600px;
     }
