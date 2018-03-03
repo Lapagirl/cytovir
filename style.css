@@ -429,6 +429,47 @@ body {
 }
 
 
+/* SHARE ************************************************************************************************************/
+
+.share {
+    position: absolute;
+    display: block;
+    top: 32px;
+    right:  calc((100% - 1440px) / 2);
+    left: auto;
+    padding-right: 42px;
+    list-style: none;
+    margin: 0;
+}
+
+.share.fixed {
+    position: fixed;
+}
+
+.share li {
+    padding: 17px;
+    border-top: solid 1px #e5e5e5;
+}
+
+.share li:hover {
+    cursor: pointer;
+}
+
+.share > li:last-child {
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.share .svg-inline--fa {
+    width: 40px;
+    height: 40px;
+    color: #ffcc00;
+}
+
+.share li:hover .svg-inline--fa {
+    color: rgb(2, 74, 156);
+}
+
+
 /* THINGS TO COLLECT **************************************************************************************************/
 
 .dots-bg {
@@ -2103,16 +2144,14 @@ body {
 /* MEDIA **************************************************************************************************************/
 
 @media screen and (max-width: 1456px) {
-    .logo {
-        left: 0;
-    }
-
-    .morning-left {
-        left: 0;
-    }
-
+    .logo,
+    .morning-left,
     .sections-nav-wrapper {
         left: 0;
+    }
+
+    .share {
+        right: 0;
     }
 
 }

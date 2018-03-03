@@ -50,15 +50,14 @@ $(document).ready(function() {
     var sectionsNav = $('.sections-nav');
     var pageNav = $('.page-nav');
     var morningLeft = $('.morning-left');
+    var sharing = $('.share');
 
 
-    var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2); //delete px from the received value
+    var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2);
     var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
     var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
+    var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
 
-    function fixingElements() {
-
-    }
 
     $(window).scroll(function () {
         if($(document).scrollTop() >= sectionsNavPos) {
@@ -78,6 +77,12 @@ $(document).ready(function() {
             morningLeft.addClass('fixed');
         } else {
             morningLeft.removeClass('fixed');
+        }
+
+        if($(document).scrollTop() >=  sharePos) {
+            sharing.addClass('fixed');
+        } else {
+            sharing.removeClass('fixed');
         }
     });
 
