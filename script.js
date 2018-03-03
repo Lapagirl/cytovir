@@ -87,3 +87,106 @@ $(document).ready(function() {
     });
 
 });
+
+
+
+(function () {
+
+    var scroll_is_being_animated = false;
+    var last_scrollTop = 0;
+
+
+    $(window).scroll(function (e) {
+        var $this = $(this);
+        var $body = $("html, body");
+
+        if (scroll_is_being_animated) {
+            e.preventDefault();
+            return;
+        }
+
+        if ($this.scrollTop() > $this.height() || scroll_is_being_animated) {
+            last_scrollTop = $this.scrollTop();
+            return;
+        }
+
+        if ($this.scrollTop() > last_scrollTop) { // Скролл вниз
+            scroll_is_being_animated = true;
+            $body.stop().animate({scrollTop: $(window).height() + 100}, 350, 'swing', function () {
+                scroll_is_being_animated = false;
+            });
+        }
+        else if ($this.scrollTop() < last_scrollTop) { // Скролл вверх
+            scroll_is_being_animated = true;
+            $body.stop().animate({scrollTop: 0}, 350, 'swing', function () {
+                scroll_is_being_animated = false;
+                last_scrollTop = 0;
+            });
+        }
+
+
+        last_scrollTop = $this.scrollTop();
+
+
+    });
+
+})();
+
+
+jQuery(function () {
+
+    var storage = localStorage;
+
+    var taked_items = [];
+
+    var storage_data = storage.getItem('taked_items');
+
+    if (storage_data) {
+        taked_items = JSON.parse(storage_data);
+    }
+    taked_items.forEach(function (item_id) {
+        $('[data-bag_item='+item_id+']').siblings('.take').addClass('hidden');
+    });
+
+    $('.take, .take-1').click(function () {
+        var $this = $(this);
+        var bag = $('.js-bag');
+        var item = $this.siblings('[data-bag_item]');
+
+        var item_styles = {
+            top: bag.offset().top - item.offset().top + item.position().top ,
+            left: bag.offset().left - item.offset().left + item.position().left
+        };
+
+        item.addClass('animate');
+        $this.addClass('hidden');
+
+        item.animate(item_styles, 1000, function () {
+            if ($this.is('.take-1 ')) {
+                location.href = $(".next-page-link").attr('href');
+            }
+        });
+
+        var item_id = item.data('bag_item');
+
+        if(!item_id){
+            throw new Error('no item id');
+        }
+
+        taked_items.push(item_id);
+        storage.setItem('taked_items', JSON.stringify(taked_items));
+    });
+
+    $(".next-page-link").click(function (e) {
+        var current_cytovir_id = $('.cytovir[data-bag_item]').data('bag_item');
+
+        if (!current_cytovir_id) {
+            throw  new Error('No cytovir item on current page');
+        }
+
+        if (taked_items.indexOf(current_cytovir_id) == -1) {
+            e.preventDefault();
+            $('.popup').addClass('show');
+        }
+    });
+});
