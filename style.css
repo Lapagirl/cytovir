@@ -819,7 +819,6 @@ body {
 .spirits,
 .spirits-shadow {
     width: 181px;
-    height: 213px;
     position: absolute;
     top: 14px;
     left: 329px;
@@ -828,11 +827,13 @@ body {
 }
 
 .spirits {
-    background: url(img/spirits.png) no-repeat;
+    background: url(img/spirits1.png) no-repeat;
+    height: 171px;
 }
 
 .spirits-shadow {
     background: url(img/spirits-shadow.png) no-repeat;
+    height: 213px;
 }
 
 .water,
