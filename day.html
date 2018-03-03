@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link href="#" rel="shortcut icon" />
-    <script src="/packages/jquery/jquery-3.3.1.min.js"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <script src="packages/jquery/jquery-3.3.1.min.js"></script>
     <script src="/packages/jarallax.min.js"></script>
     <script src="/packages/jarallax-element.min.js"></script>
     <script defer src="/packages/fontawesome-all.min.js"></script>
     <script src="/script.js"></script>
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
     <title>Цитовир-3: Простые правила</title>
 </head>
 <body>
@@ -152,7 +151,8 @@
                     </ul>
                 </nav>
 
-                <div class="morning-left">
+                <div class="title-left day-left">
+                    <div class="bag"></div>
                     <div class="day-left-bg"></div>
                 </div>
 
@@ -180,7 +180,7 @@
                         <div class="content-wrapper">
                             <div class="column left-column">
                                 <h3 class="article-heading">Миф 1</h3>
-                                <p class="article-subtitle">На работе нужно делать перерывы через одинаковые промежутки времени, чтобы глаза, мозг и тело немного отдохнули.</p>
+                                <p class="article-subtitle">На работе нужно делать перерывы через одинаковые промежутки времени, чтобы глаза, мозг и тело немного отдохнули</p>
                                 <p class="article-txt">На самом деле важны не равные промежутки времени, а небольшие завершенные рабочие процессы. Разобрались с почтой – отдыхайте, ответив всем, а не на середине процесса. Иначе весь перерыв вы будете чувствовать груз ответственности. Кроме того, не стоит считать «отдыхом» визит в курилку – думается, тут объяснений не нужно. Кстати, если вы работаете за компьютером, то согласно официальным нормам, вам положено в течение дня выделить на перерывы от 50 до 140 минут, и это без увеличения длительности рабочего дня! Об этом сказано в Приложении 7 к СанПиН 2.2.2/2.4.1340-03.</p>
                             </div>
                         </div>
@@ -195,7 +195,7 @@
                         <div class="content-wrapper">
                             <div class="column right-column">
                                 <h3 class="article-heading">Миф 2</h3>
-                                <p class="article-subtitle">Важно жить жизнью коллектива и быть в курсе всех новостей.</p>
+                                <p class="article-subtitle">Важно жить жизнью коллектива и быть в курсе всех новостей</p>
                                 <p class="article-txt">Для этого стоит общаться с людьми из разных отделов и регулярно с ними болтать за чашечкой кофе в буфете или за обедом.</p>
                                 <p class="article-txt">Увы, если и есть организации, в которых это поможет сделать карьеру, то их очень немного. Кроме того, общение заберет у вас огромную долю не только рабочего времени, но и сил, и к концу дня вы устанете от людей сильнее, чем от самой работы. А в сезон гриппа и простуд вы лично можете стать «транспортом» для миграции вирусов по офису…</p>
                             </div>
@@ -210,7 +210,7 @@
                         <div class="content-wrapper">
                             <div class="column left-column">
                                 <h3 class="article-heading">Миф 3</h3>
-                                <p class="article-subtitle">В кабинете лучше занять место возле окна – там есть хорошее освещение и всегда можно проветрить.</p>
+                                <p class="article-subtitle">В кабинете лучше занять место возле окна – там есть хорошее освещение и всегда можно проветрить</p>
                                 <p class="article-txt">Опытные офисные сотрудники знают, что тот, кто сидит у окна – по сути, постоянно обитает на линии фронта нескончаемой войны между теми, кому дует, и теми, кому душно. В итоге сам то потеет, то зябнет и, увы, заболевает первым. Стратегически более верно захватить власть над пультом от кондиционера! Если вы оказались в такой ситуации, держите на спинке стула теплый жакет или шарф, а в ящике стола – Цитовир-3.</p>
                             </div>
                         </div>
@@ -247,7 +247,7 @@
                         <div class="content-wrapper clearfix">
                             <div class="column right-column heading-group">
                                 <h3 class="article-heading">Риск 2</h3>
-                                <p class="article-subtitle">В рабочий полдник неправильное питание на работе способно подорвать здоровье.</p>
+                                <p class="article-subtitle">В рабочий полдник неправильное питание на работе способно подорвать здоровье</p>
                             </div>
                             <div class="column left-column float-left">
                                 <p class="article-txt">Есть счастливчики, имеющие на рабочем месте отличную столовую, где можно съесть подходящий обед и имеется выбор из нескольких первых блюд, салатов, горячего. Отлично, если есть возможность купить просто свежие овощи и фрукты. У вас в офисе именно так? Тогда для вас нет риска получить проблемы с иммунитетом из-за неправильного питания.</p>
@@ -378,88 +378,5 @@
         </div>
     </div>
 
-<!--<script>
-    $(document).ready(function() {
-
-        //Intro section height
-        function introHeight() {
-            var sectionHeight = $(window).height();
-            $('.intro').css('height', sectionHeight + 'px');
-        }
-
-        introHeight();
-        $(window).resize(function() {
-            introHeight();
-        });
-
-
-        //Scroll to section
-        $('.sections-nav').click('li', function (event) {
-            $(this).find('a').removeClass('active');
-            $(event.target).addClass('active');
-
-            var selector = $(event.target).attr('href');
-
-            $('html, body').animate({
-                scrollTop: $(selector).offset().top
-            }, 1000);
-        });
-
-
-        //Switch the left menu-items on scroll
-        function onScroll(){
-            var menu_selector = $('.sections-nav');
-            var scrollTop = $(document).scrollTop();
-            menu_selector.find('a').each(function(){
-                var hash = $(this).attr("href");
-                var target = $(hash);
-                if (target.position().top <= scrollTop && target.position().top + target.outerHeight() > scrollTop) {
-                    menu_selector.find('a').removeClass("active");
-                    $(this).addClass("active");
-                }
-            });
-        }
-
-        $(window).scroll(function () {
-            onScroll();
-        });
-
-
-        //Fixing the elements
-        var windowHeight = $(window).height();
-        var sectionsNav = $('.sections-nav');
-        var pageNav = $('.page-nav');
-        var morningLeft = $('.morning-left');
-
-
-        var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2); //delete px from the received value
-        var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
-        var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
-
-
-        $(window).scroll(function () {
-            if($(document).scrollTop() >= sectionsNavPos) {
-                sectionsNav.parent().addClass('fixed');
-
-            } else {
-                sectionsNav.parent().removeClass('fixed');
-            }
-
-            if($(document).scrollTop() >=  pageNavPos) {
-                pageNav.parent().addClass('fixed');
-            } else {
-                pageNav.parent().removeClass('fixed');
-            }
-
-            if($(document).scrollTop() >=  morningLeftPos) {
-               morningLeft.addClass('fixed');
-            } else {
-                morningLeft.removeClass('fixed');
-            }
-        });
-
-    });
-
-</script>-->
 </body>
 </html>

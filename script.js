@@ -49,7 +49,7 @@ $(document).ready(function() {
 /*    var windowHeight = $(window).height();*/
     var sectionsNav = $('.sections-nav');
     var pageNav = $('.page-nav');
-    var morningLeft = $('.morning-left');
+    var morningLeft = $('.title-left');
     var sharing = $('.share');
 
 

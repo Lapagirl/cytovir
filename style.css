@@ -92,7 +92,7 @@ body {
 .page-wrapper {
     width: 100%;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 480px;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
@@ -133,7 +133,7 @@ body {
     position: absolute;
     width: 100%;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 480px;
     top: 50%;
     right: 50%;
     -webkit-transform: translate(50%, -50%);
@@ -283,7 +283,7 @@ body {
 .day,
 .evening {
     position: relative;
-    padding-top: 271px;
+    padding-top: 213px;
 }
 
 /* NAVIGATION *********************************************************************************************************/
@@ -397,28 +397,41 @@ body {
 
 /* LEFT BG ****************************************************************************************************/
 
-.morning-left {
+.title-left {
     position: absolute;
-    top: 265px;
     padding-left: 42px;
     left: calc((100% - 1440px) / 2);
     z-index: -1;
+    height: 387px;
 }
 
-.morning-left.fixed {
+.title-left.fixed {
     position: fixed;
+}
+
+.morning-left {
+    top: 293px;
+}
+
+.day-left {
+    top: 258px;
+}
+
+.evening-left {
+    top: 232px;
 }
 
 .morning-left-bg {
     width: 124px;
-    height: 392px;
-    background: url('img/morning-bag.png') no-repeat;
-
+    height: 321px;
+    background: url('img/morning.png') no-repeat;
+    margin-top: -20px;
+    z-index: -1;
 }
 
 .day-left-bg {
-    width: 105px;
-    height: 387px;
+    width: 124px;
+    height: 341px;
     background: url('img/day/day.png') no-repeat;
 }
 
@@ -428,8 +441,27 @@ body {
     background: url('img/evening/evening.png') no-repeat;
 }
 
+.bag {
+    position: absolute;
+    top: -85px;
+    left: 49px;
+    width: 89px;
+    height: 91px;
+    background: url('img/bag.png') no-repeat;
+}
 
-/* SHARE ************************************************************************************************************/
+.day-left .bag {
+    top: -50px;
+}
+
+.evening-left .bag {
+    top: -15px;
+}
+
+
+
+
+    /* SHARE ************************************************************************************************************/
 
 .share {
     position: absolute;
@@ -440,6 +472,7 @@ body {
     padding-right: 42px;
     list-style: none;
     margin: 0;
+    z-index: 110;
 }
 
 .share.fixed {
@@ -1361,7 +1394,7 @@ body {
 }
 
 .rules {
-    margin-bottom: 586px;
+    margin-bottom: 710px;
 }
 
 .next-page {
@@ -1437,6 +1470,7 @@ body {
     width: 343px;
     height: 296px;
     background: url('img/day/rest.jpg') no-repeat;
+    z-index: -3;
 }
 
 .day .myth-2 {
@@ -2010,7 +2044,6 @@ body {
 }
 
 
-
 /* POPUP **************************************************************************************************************/
 
 .popup {
@@ -2145,7 +2178,7 @@ body {
 
 @media screen and (max-width: 1456px) {
     .logo,
-    .morning-left,
+    .title-left,
     .sections-nav-wrapper {
         left: 0;
     }
@@ -2167,16 +2200,35 @@ body {
     .logo-img {
         padding: 14px 12px;
     }
-    .morning-left {
+    .title-left {
         padding-left: 12px;
     }
 
     .sections-nav-wrapper {
         margin-left: 124px;
     }
+
+    .share {
+        padding-right: 12px;
+    }
+
+    .bag {
+        left: 20px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
+    .things,
+    .dots-bg,
+    .bag {
+        display: none;
+    }
+
+    .title-left {
+        opacity: 0.5;
+        top: 168px;
+    }
+
 
     .logo-img {
         width: 88px;
@@ -2262,8 +2314,30 @@ body {
         display: none;
     }
 
-    .morning {
+    .share {
+        top: 0;
+    }
+
+    .share li {
+        padding: 26px 12px;
+    }
+
+    .share li:first-child {
+        border-top: none;
+    }
+
+    .share li:last-child {
+        border-bottom: none;
+    }
+
+    .morning,
+    .day,
+    .evening {
         padding-top: 154px;
+    }
+
+    .myths, .risks, .rules {
+        padding-top: 0;
     }
 
     .central-txt {
@@ -2271,11 +2345,12 @@ body {
         margin-bottom: 79px;
     }
 
-    .morning-left {
-        top: 168px;
+    .day .central-txt {
+        margin-bottom: 110px;
     }
 
-    .morning-left-bg {
+    .morning-left-bg,
+    .day-left-bg {
         width: 78px;
         height: 290px;
         background-size: contain;
@@ -2518,7 +2593,301 @@ body {
         font-size: 1.4em;
     }
 
-/* THINGS 760-1200 ******************************************************************************************/
+
+
+    /* DAY 760 - 1199 *************************************************************************************************/
+    .day .myths {
+        margin-bottom: 152px;
+    }
+
+    .myth-1-bg {
+        position: relative;
+        width: 540px;
+        height: 330px;
+        margin: auto;
+    }
+
+    .day .myth-1 {
+        margin-bottom: 96px;
+    }
+
+    .day .myth-1 .bg-image {
+        top: -55px;
+        right: 36px;
+        bottom: 0;
+    }
+
+    .day .myth-1 .circle {
+        top: auto;
+        right: 296px;
+        bottom: 28px;
+    }
+
+    .day .myth-1 .rectangle {
+        position: absolute;
+        top: 9px;
+        right: 300px;
+
+    }
+
+    .day .myth-2 {
+        margin-bottom: 135px;
+    }
+
+    .day .myth-2-bg {
+        position: relative;
+        width: 540px;
+        height: 512px;
+        margin: auto;
+    }
+
+   /* .day .myth-2 .bg-image {
+        top: auto;
+        bottom: -510px;
+        right: auto;
+        left: 122px;
+        max-width: 650px;
+    }*/
+
+    .day .myth-2 .bg-image {
+        top: 28px;
+        bottom: -510px;
+        left: -110px;
+        max-width: 650px;
+    }
+
+    /*.day .myth-2 .rectangle {
+        top: auto;
+        bottom: -350px;
+        left: auto;
+        right: 85px;
+        width: 180px;
+    }*/
+
+    .day .myth-2 .rectangle {
+        top: -130px;
+        /* bottom: -350px; */
+        left: auto;
+        right: -178px;
+        width: 179px;
+    }
+
+    .day .myth-3-bg {
+        position: relative;
+        width: 540px;
+        height: 510px;
+        margin: auto;
+        right: auto;
+        top: auto;
+    }
+
+    .day .myth-3 .square {
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+
+    .day .myth-3 .bg-image {
+        top: 84px;
+        right: -374px;
+    }
+
+    .day .article-subtitle_small {
+        font-size: 2.3em;
+        line-height: 1.35em;
+        padding-right: 0;
+    }
+
+    .day .risks {
+        margin-bottom: 173px;
+    }
+
+    .day .risk-1 {
+        margin-bottom: 100px;
+    }
+
+    .day .risk-1-bg {
+        position: relative;
+        width: 540px;
+        height: 410px;
+        margin: auto;
+    }
+
+    .day .risk-1 .right-column {
+        padding-top: 30px;
+        margin-left: 0;
+    }
+
+    .day .risk-1 .article-txt {
+        margin: 0;
+    }
+
+    .day .risk-1 .bg-image {
+        top: 55px;
+        left: 0;
+    }
+
+    .day .risk-1 .rectangle {
+        bottom: 6px;
+        right: 0;
+        top: auto;
+        width: 140px;
+        left: auto;
+    }
+
+    .day .risk-2 {
+        margin-bottom: 134px;
+    }
+
+    .day .risk-2 .right-column.heading-group {
+        margin-left: 0;
+    }
+
+    .day .risk-2-bg {
+        position: relative;
+        width: 540px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .day .risk-2 .circle {
+        top: -139px;
+        right: -10px;
+        left: auto;
+    }
+
+    .day .risk-2 .bg-image {
+        top: -22px;
+        left: -24px;
+    }
+
+    .day .risk-3-bg {
+        position: relative;
+        width: 540px;
+        height: 620px;
+        margin: auto;
+    }
+
+    .day .risk-3 .rectangle {
+        bottom: 8px;
+        left: 0;
+        top: auto;
+    }
+
+    .day .risk-3 .bg-image {
+        top: -11px;
+        left: 228px;
+    }
+
+    .day .rules {
+        margin-bottom: 164px;
+    }
+
+    .day .rule-1 {
+        margin-bottom: 136px;
+    }
+
+    .day .rule-1 .article-subtitle_small {
+        font-size: 2em;
+        line-height: 1.29em;
+        padding-right: 0;
+    }
+
+    .day .rule-1 .right-column {
+         padding-top: 24px;
+    }
+
+    .day .rule-1-bg {
+        position: relative;
+        width: 540px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .day .rule-1 .bg-image {
+        right: -37px;
+        left: auto;
+        top: 64px;
+    }
+
+    .day .rule-1 .rectangle {
+        right: -108px;
+        bottom: 8px;
+        top: auto;
+        left: auto;
+    }
+
+    .day .rule-2 {
+        margin-bottom: 133px;
+    }
+
+    .day .rule-2 .left-column {
+         padding-top: 0;
+    }
+    .day .rule-2-bg {
+        position: relative;
+        width: 540px;
+        height: 440px;
+        margin: auto;
+    }
+
+    .day .rule-2 .rectangle {
+        top: 25px;
+        left: 0;
+        width: 226px;
+        height: 205px;
+    }
+
+    .day .rule-2 .bg-image {
+        top: auto;
+        bottom: 9px;
+        right: -107px;
+        left: auto;
+    }
+
+    .day .rule-3 {
+        margin-bottom: 120px;
+    }
+
+    .day .rule-3-bg {
+        position: relative;
+        width: 540px;
+        height: 614px;
+        margin: auto;
+    }
+
+    .day .rule-3 .circle {
+        top: -154px;
+        right: -145px;
+        left: auto;
+    }
+
+    .day .rule-3 .bg-image {
+        left: -13px;
+        bottom: 7px;
+        top: auto;
+    }
+
+    .day .rule-4-bg {
+        position: relative;
+        width: 540px;
+        height: 756px;
+        margin: auto;
+    }
+
+    .day .rule-4 .rectangle {
+        top: 64px;
+        left: -114px;
+    }
+
+    .day .rule-4 .bg-image {
+        right: -321px;
+        left: auto;
+        top: 165px;
+    }
+
+
+/* THINGS 760-1200 ****************************************************************************************************/
     .dots-bg {
         background: url(img/dots-small.png) no-repeat;
         min-height: 11853px;
@@ -2679,10 +3048,10 @@ body {
 
      [data-jarallax-element] { transform: none !important; }
 
-    .things,
+  /*  .things,
     .dots-bg {
         display: none;
-    }
+    }*/
 
     .logo-img {
         width: 60px;
@@ -2715,10 +3084,13 @@ body {
     .project-label {
         margin-bottom: 300px;
         font-size: 0.7em;
+        padding-left: 100px;
     }
 
     .intro-text {
         font-size: 1.2em;
+        padding: 0 75px;
+        box-sizing: border-box;
     }
 
     .style-txt {
@@ -2750,12 +3122,41 @@ body {
         left: -22px;
     }
 
-    .morning {
+    .page-nav > li> a {
+        border: solid 1px rgb(255, 204, 0);
+    }
+
+    .morning-left-bg,
+    .day-left-bg,
+    .evening-left-bg {
+        width: 50px;
+        background-size: contain;
+    }
+
+    .morning,
+    .day,
+    .evening {
         padding-top: 110px;
     }
 
-    .morning-left-bg {
-        width: 50px;
+    .myths,
+    .risks,
+    .rules {
+        padding: 0 75px;
+        box-sizing: border-box;
+    }
+
+    .share li {
+        padding: 20px 8px;
+    }
+
+    .share .svg-inline--fa {
+        width: 32px;
+        height: 32px;
+    }
+
+    .content-wrapper {
+        padding: 0;
     }
 
     .central-txt {
@@ -2763,11 +3164,13 @@ body {
         box-sizing: border-box;
         font-size: 1.2em;
         margin-bottom: 54px;
+        padding: 0 75px;
     }
 
     .section-heading {
         font-size: 2.2em;
         margin: 0 auto 16px;
+        padding: 0;
     }
 
     .article-heading {
@@ -2810,7 +3213,12 @@ body {
         top: 380px;
     }
 
-    .morning .myth-3-bg{top: -60px;                transform: scale(.6);                transform-origin: 100% 50%;                right: -150px;}
+    .morning .myth-3-bg {
+        top: -60px;
+        transform: scale(.6);
+        transform-origin: 100% 50%;
+        right: -150px;
+    }
 
     .risks {
         margin-bottom: 680px;
@@ -2873,6 +3281,63 @@ body {
         bottom: -568px;
     }
 
+
+
+    /* DAY 480 - 759 *************************************************************************/
+    .day .myth-1-bg,
+    .day .myth-2-bg,
+    .day .myth-3-bg,
+    .day .risk-1-bg,
+    .day .risk-2-bg,
+    .day .risk-3-bg,
+    .day .rule-1-bg,
+    .day .rule-2-bg,
+    .day .rule-3-bg,
+    .day .rule-4-bg{
+        width: 400px;
+    }
+
+    .day .risk-1 .bg-image {
+        display: block;
+    }
+
+    .day .risk-1 .rectangle {
+        left: 0;
+    }
+
+    .day .article-subtitle_small,
+    .day .rule-1 .article-subtitle_small {
+        font-size: 1.4em;
+        line-height: 1.2em;
+    }
+
+    .day .risk-2 .circle {
+        top: -144px;
+        right: 63px;
+        left: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .day .risk-3 .bg-image {
+        left: 0;
+    }
+
+    .day .risk-3 .rectangle {
+        width: 200px;
+        height: 150px;
+    }
+
+    .day .rule-1 .rectangle {
+        left: 200px;
+    }
+
+    .day .rule-2 .rectangle {
+        top: auto;
+        left: 0;
+        height: 153px;
+        bottom: -50px;
+    }
 
 }
 
