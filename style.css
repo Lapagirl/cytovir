@@ -1373,29 +1373,33 @@ body {
 
 .day .myth-1 .rectangle {
     position: absolute;
-    top: 310px;
+    top: 160px;
     right: 609px;
     width: 58px;
     height: 201px;
     background-color: #ffcc00;
+    z-index: 2;
 }
 
 .day .myth-1 .circle {
     position: absolute;
-    top: 534px;
+    top: 490px;
     right: 605px;
     width: 66px;
     height: 66px;
     background-color: #ffcc00;
+    z-index: 2;
+
 }
 
 .day .myth-1 .bg-image {
     position: absolute;
-    top: 65px;
+    top: -100px;
     right: 374px;
     width: 343px;
     height: 296px;
     background: url('img/day/rest.jpg') no-repeat;
+
 }
 
 .day .myth-2 {
@@ -1652,7 +1656,7 @@ body {
     right: 475px;
     width: 344px;
     height: 393px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     z-index: -3;
 }
 
@@ -1690,7 +1694,7 @@ body {
 
 .evening .myth-2-bg .rectangles {
     position: absolute;
-    bottom: 86px;
+    bottom: -50px;
     left: 0;
     z-index: -1;
 }
@@ -1861,7 +1865,7 @@ body {
 
 .evening .rule-1 .circle {
     position: absolute;
-    bottom: -389px;
+    bottom: -450px;
     left: 202px;
     top: auto;
     width: 652px;
@@ -1904,7 +1908,7 @@ body {
 
 .evening .rule-3 .rectangle {
     position: absolute;
-    top: 0;
+    top: -250px;
     right: 40px;
     left: auto;
     width: 698px;
@@ -1915,7 +1919,7 @@ body {
 
 .evening .rule-3 .bg-image {
     position: absolute;
-    top: 590px;
+    top: 600px;
     right: 320px;
     left: auto;
     width: 436px;
@@ -2016,6 +2020,7 @@ body {
 .take-txt-1 {
     padding-right: 56px;
     position: relative;
+    cursor: pointer;
 }
 
 .take-txt-1::before {
@@ -2083,11 +2088,7 @@ body {
     left: 50%;
     width: 277px;
     height: 294px;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
+        margin-left: -138px;
     background: url("img/cytovir.png") no-repeat;
     background-size: contain;
 }
@@ -2851,8 +2852,27 @@ body {
 }
 
 
+.take:hover + div { animation: shake linear infinite .25s alternate }
+.take:hover + div + div { animation: shake linear infinite .25s alternate }
 
+.take.hidden:hover + div { animation: none }
+.take.hidden:hover + div + div { animation: none}
 
+[data-bag_item] { transform: scale(1);  }
+[data-bag_item].animate { animation: scale_item 1s forwards, fadeOut .4s .7s forwards alternate !important; opacity: 1 !important; }
 
+.take.hidden { display: none; }
+.take.hidden ~ [data-bag_item] { opacity: 0; }
 
-
+@keyframes shake {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(6deg); }
+}
+@keyframes scale_item {
+        from { transform: scale(1); }
+        to { transform: scale(0.2); }
+}
+@keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+}
