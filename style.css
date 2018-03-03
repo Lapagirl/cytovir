@@ -3523,6 +3523,7 @@ body {
 
     .day .risk-1 .bg-image {
         display: block;
+        left: 2px;
     }
 
     .day .risk-1 .rectangle {
@@ -3553,7 +3554,7 @@ body {
     }
 
     .day .rule-1 .rectangle {
-        left: 200px;
+        right: 20px;
     }
 
     .day .rule-2 .rectangle {
@@ -3561,6 +3562,15 @@ body {
         left: 0;
         height: 153px;
         bottom: -50px;
+    }
+
+    .day .rule-4 .rectangle {
+        left: 0;
+        width: 140px;
+    }
+
+    .day .rule-4 .bg-image {
+        left: 0;
     }
 
     .evening .myth-3-bg .circle {
