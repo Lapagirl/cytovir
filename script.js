@@ -54,7 +54,8 @@ $(document).ready(function() {
 
 
         var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2);
-        var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
+        // var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
+        var pageNavOffset = $(".intro").height();
         var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
 
@@ -65,7 +66,7 @@ $(document).ready(function() {
             sectionsNav.parent().removeClass('fixed');
         }
 
-        if($(document).scrollTop() >=  pageNavPos) {
+        if($(document).scrollTop() >=  pageNavOffset) {
             pageNav.parent().addClass('fixed');
         } else {
             pageNav.parent().removeClass('fixed');
