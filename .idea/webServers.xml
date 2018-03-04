@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8bb619e7-a2c9-4768-b3bc-48c1e4a33e97" name="cytovir.recolon.local" url="http://cytovir.recolon.local">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
+      <webServer id="b04b0dbe-7bb0-4ee5-9113-0c13ea1ae49c" name="cls.recolon.ru" url="http://cytovir.cls.recolon.local">
+        <fileTransfer port="0" mountedRoot="A:\cls\sites" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

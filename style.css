@@ -1,4 +1,3 @@
-
 @font-face {
     font-family:"Circe";
     src:
@@ -92,7 +91,7 @@ body {
 .page-wrapper {
     width: 100%;
     max-width: 1440px;
-    min-width: 480px;
+    min-width: 320px;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
@@ -127,13 +126,14 @@ body {
 .intro {
     position: relative;
     min-height: 660px;
+    min-width: 320px;
 }
 
 .intro-wrapper {
     position: absolute;
     width: 100%;
     max-width: 1440px;
-    min-width: 480px;
+    min-width: 320px;
     top: 50%;
     right: 50%;
     -webkit-transform: translate(50%, -50%);
@@ -3336,7 +3336,8 @@ body {
         left: -22px;
     }
 
-    .page-nav > li> a {
+    .page-nav > li> a,
+    .section-link-list > li > a {
         border: solid 1px rgb(255, 204, 0);
     }
 
@@ -3623,6 +3624,162 @@ body {
 
 }
 
+
+@media screen and (max-width: 479px) {
+    .logo-img {
+        width: 50px;
+    }
+
+    .share .svg-inline--fa {
+        width: 26px;
+        height: 26px;
+    }
+
+    .share li {
+        padding: 12px 8px;
+    }
+
+
+    /*.intro {
+        min-height: 945px;
+    }*/
+
+    .project-label {
+        padding-left: 80px;
+    }
+
+    .intro-text {
+        font-size: 1em;
+    }
+
+    .style-txt {
+        margin: 0 54px;
+        font-size: 1em;
+    }
+
+    .section-link-list {
+        margin: 12px 0;
+    }
+
+    .morning-left-bg,
+    .day-left-bg,
+    .evening-left-bg {
+        width: 40px;
+    }
+
+    .page-nav-wrapper {
+        top: 18px;
+    }
+
+    .page-nav > li + li:before {
+        top: 13px;
+        left: -7px;
+        width: 8px;
+        height: 1px;
+    }
+
+    .central-txt {
+        font-size: 1em;
+        padding: 0 65px 0 70px;
+    }
+
+    .myths, .risks, .rules {
+        padding: 0 65px 0 70px;
+    }
+
+    .article-txt {
+        font-size: 1em;
+    }
+
+    .section-heading {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .article-heading {
+        font-size: 1.2em;
+    }
+
+    .article-subtitle {
+        font-size: 1.1em;
+        margin-bottom: 22px;
+    }
+
+    .day .myth-1-bg,
+    .day .myth-2-bg,
+    .day .myth-3-bg,
+    .day .risk-1-bg,
+    .day .risk-2-bg,
+    .day .risk-3-bg,
+    .day .rule-1-bg,
+    .day .rule-2-bg,
+    .day .rule-3-bg,
+    .day .rule-4-bg,
+    .evening .myth-1-bg,
+    .evening .myth-2-bg,
+    .evening .myth-3-bg,
+    .evening .risk-1-bg,
+    .evening .risk-2-bg,
+    .evening .risk-3-bg,
+    .evening .rule-1-bg,
+    .evening .rule-2-bg,
+    .evening .rule-3-bg,
+    .evening .rule-4-bg {
+        width: 320px;
+    }
+
+    .day .myth-1 .bg-image {
+        right: 29px;
+    }
+
+    .day .myth-1 .rectangle {
+        right: 276px;
+    }
+
+    .day .myth-1 .circle {
+        right: 272px;
+    }
+
+    .day .myth-3 .bg-image {
+        right: -387px;
+    }
+
+    .day .rules {
+        margin-bottom: 90px;
+    }
+
+    .day .article-subtitle_small,
+    .day .rule-1,
+    .article-subtitle_small {
+        font-size: 1em;
+    }
+
+    .day .risk-1 .bg-image {
+        left: -160px;
+    }
+
+    .day .risk-3 .bg-image {
+        left: -94px;
+    }
+
+    .day .rule-4 .rectangle {
+        left: 0;
+        width: 90px;
+    }
+
+    .next-page {
+        padding: 0 72px 140px;
+    }
+
+    .next-page-link {
+        font-size: 1em;
+    }
+
+
+}
+
+
+
 @media screen and (max-width: 479px) {
     .rule-1 {
         margin-bottom: 700px;
@@ -3633,6 +3790,18 @@ body {
 @media screen and (max-width: 410px) {
     .rule-1 {
         margin-bottom: 476px;
+    }
+
+    .section-link-list > li > a,
+    .page-nav > li> a {
+        font-size: 0.8em;
+        width: 60px;
+        padding: 6px 0;
+    }
+
+    .section-link-list > li + li,
+    .page-nav > li + li {
+        margin-left: 3px;
     }
 }
 
