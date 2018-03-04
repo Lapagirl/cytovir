@@ -111,13 +111,13 @@ $(document).ready(function() {
             return;
         }
 
-        if ($body.scrollTop() >= first_slide.height() - 100) {
+        if ($body.scrollTop() >= first_slide.height()) {
             return;
         }
 
         if (e.originalEvent.wheelDelta < 0) { // Скролл вниз
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: $(window).height()+10}, 500, function () {
+            $body.stop().animate({scrollTop: first_slide.height()+10}, 500, function () {
                 scroll_is_being_animated = false;
             });
         }
