@@ -135,7 +135,7 @@ $(document).ready(function() {
 
 jQuery(function () {
 
-    var storage = localStorage;
+    var storage = sessionStorage;
 
     var taked_items = [];
 
