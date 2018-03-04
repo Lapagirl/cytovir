@@ -111,7 +111,7 @@ $(document).ready(function() {
             return;
         }
 
-        if ($body.scrollTop() >= first_slide.height()) {
+        if ($body.scrollTop() >= first_slide.height() - 100) {
             return;
         }
 
