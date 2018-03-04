@@ -407,6 +407,7 @@ body {
 
 .title-left.fixed {
     position: fixed;
+    z-index: 100;
 }
 
 .morning-left {
@@ -422,22 +423,22 @@ body {
 }
 
 .morning-left-bg {
-    width: 124px;
-    height: 321px;
+    width: 127px;
+    height: 343px;
     background: url('img/morning.png') no-repeat;
     margin-top: -20px;
     z-index: -1;
 }
 
 .day-left-bg {
-    width: 124px;
-    height: 341px;
+    width: 146px;
+    height: 363px;
     background: url('img/day/day.png') no-repeat;
 }
 
 .evening-left-bg {
-    width: 103px;
-    height: 402px;
+    width: 125px;
+    height: 409px;
     background: url('img/evening/evening.png') no-repeat;
 }
 
@@ -623,7 +624,8 @@ body {
     left: 304px;
 }
 
-.thing-11 .cytovir {
+.thing-11 .cytovir,
+.thing-11 .cytovir-shadow {
     left: 372px;
 }
 
@@ -680,7 +682,8 @@ body {
     left: 304px;
 }
 
-.thing-16 .cytovir {
+.thing-16 .cytovir,
+.thing-16 .cytovir-shadow {
     left: 370px;
 }
 
@@ -967,86 +970,146 @@ body {
     background: url(img/keys-shadow.png);
 }
 
-.headphones {
-    width: 210px;
-    height: 212px;
+.headphones,
+.headphones-shadow {
+    width: 167px;
+    height: 111px;
     position: absolute;
-    top: 80px;
-    left: 327px;
-    background: url(img/day/headphones.jpg) no-repeat;
+    top: 114px;
+    left: 336px;
+    z-index: -3;
+}
+
+.headphones {
+    background: url(img/day/headphones.png) no-repeat;
+}
+
+.headphones-shadow {
+    background: url(img/day/headphones-shadow.png) no-repeat;
+}
+
+.pen,
+.pen-shadow {
+    width: 301px;
+    height: 166px;
+    position: absolute;
+    top: 137px;
+    left: 280px;
     z-index: -3;
 }
 
 .pen {
-    width: 300px;
-    height: 165px;
-    position: absolute;
-    top: 137px;
-    left: 280px;
     background: url(img/day/pen.png) no-repeat;
+}
+
+.pen-shadow {
+    background: url(img/day/pen-shadow.png) no-repeat;
+}
+
+.phone,
+.phone-shadow {
+    width: 233px;
+    height: 224px;
+    position: absolute;
+    top: 52px;
+    left: 367px;
     z-index: -3;
 }
 
 .phone {
-    width: 233px;
-    height: 224px;
-    position: absolute;
-    top: 45px;
-    left: 333px;
-    background: url(img/day/phone.jpg) no-repeat;
-    z-index: -3;
+    background: url(img/day/phone.png) no-repeat;
+}
+
+.phone-shadow {
+    background: url(img/day/phone-shadow.png) no-repeat;
 }
 
 .balls {
-    width: 248px;
-    height: 213px;
+    width: 232px;
+    height: 195px;
     position: absolute;
-    top: 100px;
+    top: 108px;
     left: 314px;
-    background: url(img/day/balls.png) no-repeat;
     z-index: -1;
+}
+
+.balls {
+    background: url(img/day/balls.png) no-repeat;
+}
+
+.balls-shadow {
+    background: url(img/day/balls-shadow.png) no-repeat;
 }
 
 .mascara {
     width: 64px;
-    height: 262px;
+    height: 258px;
     position: absolute;
     top: 0;
     left: 400px;
+    z-index: -1;
+}
+
+.mascara {
     background: url(img/day/mascara.png) no-repeat;
+}
+
+.mascara-shadow {
+    background: url(img/day/mascara-shadow.png) no-repeat;
+}
+
+.note {
+    width: 162px;
+    height: 129px;
+    position: absolute;
+    top: 56px;
+    left: 365px;
     z-index: -1;
 }
 
 .note {
-    width: 169px;
-    height: 133px;
-    position: absolute;
-    top: 56px;
-    left: 365px;
     background: url(img/day/note.png) no-repeat;
-    z-index: -1;
 }
 
-.chocolate {
+.note-shadow {
+    background: url(img/day/note-shadow.png) no-repeat;
+}
+
+.chocolate,
+.chocolate-shadow {
     position: absolute;
     top: 119px;
     left: 350px;
-    width: 220px;
-    height: 157px;
-    background: url("img/evening/chocolate.jpg") no-repeat;
+    width: 202px;
+    height: 143px;
+    z-index: -3;
+}
+
+.chocolate {
+    background: url("img/evening/chocolate.png") no-repeat;
+}
+
+.chocolate-shadow {
+    background: url("img/evening/chocolate-shadow.png") no-repeat;
+}
+
+.powerbank,
+.powerbank-shadow {
+    position: absolute;
+    top: 77px;
+    left: 387px;
+    width: 135px;
+    height: 145px;
     z-index: -3;
 }
 
 .powerbank {
-    position: absolute;
-    top: 77px;
-    left: 387px;
-    width: 151px;
-    height: 148px;
     background: url("img/evening/powerbank.png") no-repeat;
-    z-index: -3;
 }
 
+.powerbank-shadow {
+    background: url("img/evening/powerbank-shadow.png") no-repeat;
+}
 
 /* MORNING ARTICLES ***************************************************************************************************/
 
@@ -1607,7 +1670,7 @@ body {
 }
 
 .day .rules {
-    margin-bottom: 760px;
+    margin-bottom: 955px;
 }
 
 .day .rule-1 {
@@ -1711,12 +1774,6 @@ body {
 
 
 /* EVENING PAGE *******************************************************************************************************/
-
-/*
-.evening .central-txt {
-    margin-bottom:85px;
-}
-*/
 
 .evening .myths {
     margin-bottom: 236px;
@@ -2125,39 +2182,6 @@ body {
     font-weight: bold;
 }
 
-
-
-/*.popup .take {
-    margin-top: 17px;
-}
-
-.popup .left.take-txt {
-    position: relative;
-    top: auto;
-    left: auto;
-    bottom: 0;
-    right: 150px;
-}
-
-.popup .left.take-txt::before {
-    top: -6px;
-}
-
-.popup .left.take-txt::after {
-    top: -5px;
-}*/
-
-/*.take-1 {
-    position: relative;
-    width: 100%;
-    text-align: right;
-    margin-left: auto;
-    display: inline-block;
-}*/
-
-
-
-
 .cytovir-img {
     position: absolute;
     top: -324px;
@@ -2403,40 +2427,55 @@ body {
         padding-left: 0;
     }
 
+    .bg-mobile-prop {
+        position: relative;
+        width: 540px;
+        margin: auto;
+    }
+
     .myths {
-        margin-bottom: 688px;
+        margin-bottom: 164px;
     }
 
     .myth-1 {
-        margin-bottom: 244px;
+        margin-bottom: 40px;
     }
 
-    .myth-1-bg .circle {
-        top: 350px;
-        right: -20px;
+    .morning .myth-1-bg {
+        height: 178px;
+    }
+
+    .morning .myth-1-bg .circle {
+        top: auto;
+        bottom: 0;
+        right: -130px;
     }
 
     .myth-1-bg .bg-image {
-        top: 553px;
-        right: 192px;
+        top: auto;
+        bottom: 0;
+        right: 83px;
     }
 
     .myth-2 {
-        margin-bottom: 570px;
+        margin-bottom: 82px;
     }
 
-    .myth-2 .rectangle {
+    .morning .myth-2-bg {
+        height: 416px;
+    }
+
+    .morning .myth-2 .rectangle {
         width: 226px;
-        top: 336px;
-        left: 0;
+        top: -132px;
+        left: -108px;
     }
 
-    .myth-2-bg .bg-image {
-        top: 498px;
-        left: 108px;
-        width: 100%;
-        max-width: 650px;
-        height: 352px;
+    .morning .myth-2-bg .bg-image {
+        top: 31px;
+        left: 0;
+        width: 650px;
+        height: 354px;
         background-size: contain;
     }
 
@@ -2444,67 +2483,94 @@ body {
         padding-top: 24px;
     }
 
-    .myth-3-bg {
-        top: 108px;
-        right: -300px;
+    .morning .myth-3-bg {
+        top: 100px;
+        right: 0;
+        left: auto;
+        width: 626px;
+        height: 280px;
+    }
+
+    .morning .myth-3-bg .sun {
+        position: static;
+        top: 0;
     }
 
     .risks {
-        margin-bottom: 1080px;
+        margin-bottom: 190px;
     }
 
     .risk-1 {
-        margin-bottom: 886px;
+        margin-bottom: 170px;
+    }
+
+    .morning .risk-1-bg {
+        height: 364px;
     }
 
     .risk-1-bg .bg-image {
-        top: 794px;
+        top: auto;
+        left: 92px;
+        bottom: 0;
         width: 555px;
-        left: 202px;
     }
 
     .risk-1-bg .rectangle {
-        top: 608px;
-        width: 292px;
+        top: -192px;
+        left: -198px;
+        width: 379px;
     }
 
     .risk-2 {
-        margin-bottom: 800px;
+        margin-bottom: 180px;
+    }
+
+    .morning .risk-2-bg {
+        height: 420px;
     }
 
     .risk-2-bg .bg-image {
-        top: 489px;
-        left: 71px;
+        top: -6px;
+        left: -41px;
     }
 
     .risk-2-bg .circle {
         position: absolute;
-        top: 338px;
-        left: 548px;
+        top: -158px;
+        left: auto;
+        right: -148px;
     }
 
     .risk-3 .right-column {
         padding-top: 24px;
     }
 
+    .risk-3-bg {
+        height: 439px;
+    }
+
     .risk-3-bg .rectangle {
-        bottom: -634px;
-        left: 0;
+        top: -252px;
+        left: -90px;
         width: 188px;
     }
 
     .risk-3-bg .bg-image {
-        bottom: -470px;
-        left: 172px;
+        bottom: 0;
+        left: -15px;
         width: 583px;
     }
 
     .rules {
-        margin-bottom: 1054px;
+        margin-bottom: 140px;
     }
 
     .rule-1 {
-        margin-bottom: 812px;
+        margin-bottom: 190px;
+    }
+
+    .rule-1-bg {
+        height: 395px;
     }
 
     .rule-1 .right-column {
@@ -2513,8 +2579,8 @@ body {
 
     .rule-1 .circle {
         position: absolute;
-        top: 638px;
-        right: -98px;
+        top: -467px;
+        right: -207px;
         z-index: -3;
     }
 
@@ -2524,14 +2590,16 @@ body {
         background-color: #ffcc00;
         z-index: -1;
         position: absolute;
-        top: 1640px;
-        right: 0;
+        top: auto;
+        bottom: 0;
+        right: -108px;
     }
 
     .rule-1 .bg-image {
         position: absolute;
-        top: 1125px;
-        right: 73px;
+        top: auto;
+        bottom: 24px;
+        right: -35px;
         z-index: -2;
     }
 
@@ -2540,7 +2608,7 @@ body {
     }
 
     .rule-2 {
-        margin-bottom: 1050px;
+        margin-bottom: 190px;
     }
 
     .rule-2 .right-column.heading-group {
@@ -2551,16 +2619,18 @@ body {
         padding-top: 24px;
     }
 
+    .rule-2-bg {
+        height: 652px;
+    }
+
     .rule-2-bg .bg-image {
-        left: 108px;
-        top: auto;
-        bottom: -626px;
+        left: 9px;
+        top: 29px;
     }
 
     .rule-2-bg .rectangle {
-        left: 0;
-        top: auto;
-        bottom: -447px;
+        left: -98px;
+        top: -200px;
         width: 242px;
     }
 
@@ -2568,24 +2638,27 @@ body {
         padding-top: 24px;
     }
 
+    .rule-3-bg {
+        height: 670px;
+    }
+
     .rule-3-bg .circle {
-        bottom: -670px;
-        right: 0;
+        bottom: 0;
+        right: -110px;
     }
 
     .rule-3-bg .bg-image {
-        bottom: -505px;
-        left: auto;
-        right: 260px;
+        bottom: 167px;
+        left: -46px;
     }
 
     .about {
-        bottom: -540px;
-        right: -30px;
+        bottom: 132px;
+        right: -140px;
         width: 300px;
     }
 
-    .about-txt {
+    .morning .about-txt {
         font-size: 1.45em;
     }
 
@@ -2605,8 +2678,6 @@ body {
     }
 
     .myth-1-bg {
-        position: relative;
-        width: 540px;
         height: 330px;
         margin: auto;
     }
@@ -2639,8 +2710,6 @@ body {
     }
 
     .day .myth-2-bg {
-        position: relative;
-        width: 540px;
         height: 512px;
         margin: auto;
     }
@@ -2660,8 +2729,6 @@ body {
     }
 
     .day .myth-3-bg {
-        position: relative;
-        width: 540px;
         height: 510px;
         margin: auto;
         right: auto;
@@ -2694,8 +2761,6 @@ body {
     }
 
     .day .risk-1-bg {
-        position: relative;
-        width: 540px;
         height: 410px;
         margin: auto;
     }
@@ -2731,8 +2796,6 @@ body {
     }
 
     .day .risk-2-bg {
-        position: relative;
-        width: 540px;
         height: 350px;
         margin: auto;
     }
@@ -2749,8 +2812,6 @@ body {
     }
 
     .day .risk-3-bg {
-        position: relative;
-        width: 540px;
         height: 620px;
         margin: auto;
     }
@@ -2785,8 +2846,6 @@ body {
     }
 
     .day .rule-1-bg {
-        position: relative;
-        width: 540px;
         height: 400px;
         margin: auto;
     }
@@ -2812,8 +2871,6 @@ body {
          padding-top: 0;
     }
     .day .rule-2-bg {
-        position: relative;
-        width: 540px;
         height: 440px;
         margin: auto;
     }
@@ -2837,8 +2894,6 @@ body {
     }
 
     .day .rule-3-bg {
-        position: relative;
-        width: 540px;
         height: 614px;
         margin: auto;
     }
@@ -2856,8 +2911,6 @@ body {
     }
 
     .day .rule-4-bg {
-        position: relative;
-        width: 540px;
         height: 756px;
         margin: auto;
     }
@@ -2877,8 +2930,6 @@ body {
 /* EVENING 760 - 1199 *************************************/
 
     .evening .myth-1-bg {
-        position: relative;
-        width: 540px;
         height: 400px;
         margin: auto;
     }
@@ -2895,8 +2946,6 @@ body {
     }
 
     .evening .myth-2-bg {
-        position: relative;
-        width: 540px;
         height: 420px;
         margin: auto;
     }
@@ -2905,20 +2954,6 @@ body {
     .evening .myth-2-bg .rectangle.right {
         display: none;
     }
-
-   /* .evening .myth-2-bg .rectangle.center {
-        left: 92px;
-        top: auto;
-        bottom: 0;
-    }
-
-    .evening .myth-2 .bg-image {
-        top: auto;
-        bottom: 0;
-        left: 16px;
-        right: auto;
-    }
-*/
 
     .evening .myth-2-bg .rectangle.center {
         left: 0;
@@ -2940,8 +2975,6 @@ body {
     }
 
     .evening .myth-3-bg {
-        position: relative;
-        width: 540px;
         height: 420px;
         margin: auto;
     }
@@ -2956,8 +2989,6 @@ body {
     }
 
     .evening .risk-1-bg {
-        position: relative;
-        width: 540px;
         height: 510px;
         margin: auto;
     }
@@ -2973,8 +3004,6 @@ body {
     }
 
     .evening .risk-2-bg {
-        position: relative;
-        width: 540px;
         height: 590px;
         margin: auto;
     }
@@ -2988,8 +3017,6 @@ body {
     }
 
     .evening .risk-3-bg {
-        position: relative;
-        width: 540px;
         height: 680px;
         margin: auto;
     }
@@ -3017,8 +3044,6 @@ body {
     }
 
     .evening .rule-1-bg {
-        position: relative;
-        width: 540px;
         height: 520px;
         margin: auto;
     }
@@ -3039,8 +3064,6 @@ body {
     }
 
     .evening .rule-2-bg {
-        position: relative;
-        width: 540px;
         height: 600px;
         margin: auto;
     }
@@ -3054,8 +3077,6 @@ body {
     }
 
     .evening .rule-3-bg {
-        position: relative;
-        width: 540px;
         height: 550px;
         margin: auto;
     }
@@ -3072,8 +3093,6 @@ body {
     }
 
     .evening .rule-4-bg {
-        position: relative;
-        width: 540px;
         height: 595px;
         margin: auto;
     }
@@ -3320,6 +3339,10 @@ body {
         margin-left: 6px;
     }
 
+    .page-nav > li + li {
+        margin-left: 6px;
+    }
+
     .section-link-list > li {
         vertical-align: middle;
     }
@@ -3334,7 +3357,8 @@ body {
 
     .page-nav > li + li:before {
         top: 14px;
-        left: -22px;
+        left: -10px;
+        width: 10px;
     }
 
     .page-nav > li> a,
@@ -3414,57 +3438,80 @@ body {
         margin-bottom: 100px;
     }
 
-    .myth-1-bg .circle{ top:230px;}
-    .myth-1-bg .bg-image{ top:423px;}
+    .morning .myth-1 {
+        margin-bottom: 90px;
+    }
+
+    .morning .myth-1-bg .circle {
+        top: auto;
+        bottom: 8px;
+        right: -45px;
+    }
+
+    .myth-1-bg .bg-image  {
+        top: 20px;
+    }
+
     .myth-2 {
-        margin-bottom: 510px;
+        margin-bottom: 60px;
     }
 
-    .myth-2 .rectangle {
-        width: 116px;
-        top: 273px;
+    .morning .myth-2 .rectangle {
+        width: 200px;
+        top: -132px;
     }
 
-    .myth-2-bg .bg-image {
-        top: 380px;
+    .morning .myth-2-bg .bg-image {
+        width: 570px;
     }
 
     .morning .myth-3-bg {
-        top: -60px;
+        top: 0;
         transform: scale(.6);
         transform-origin: 100% 50%;
-        right: -150px;
+        right: -114px;
     }
 
-    .risks {
-        margin-bottom: 680px;
+    .morning .risks {
+        margin-bottom: 170px;
     }
 
-    .risk-1 {
+    .morning .risk-1 {
         margin-bottom: 100px;
     }
 
-    .risk-1-bg .rectangle {
-        top: 208px;
+    .morning .risk-1-bg .rectangle {
+        top: auto;
         width: 292px;
+        bottom: 173px;
     }
 
-    .risk-1-bg .bg-image {
-        display: none;
+    .morning .risk-1-bg .bg-image {
+        top: 10px;
+        left: -28px;
     }
 
     .risk-2 {
-        margin-bottom: 250px;
+        margin-bottom: 100px;
     }
 
-    .risk-2-bg .bg-image {
-        top: 350px;
-        left: 32px;
-        max-width: 656px;
+    .morning .risk-2-bg {
+        height: 342px;
+    }
+
+    .morning .risk-2-bg .bg-image {
+        top: 0;
+        left: -46px;
+        width: 667px;
+        height: 320px;
         background-size: contain;
-        width: 100%;
-        height: 300px;
-        background-position: 70%;
+    }
+
+    .morning .risk-2-bg .circle {
+        width: 200px;
+        height: 200px;
+        top: -130px;
+        right: -96px;
     }
 
     .risk-3-bg .bg-image {
@@ -3472,54 +3519,50 @@ body {
     }
 
     .rules {
-        margin-bottom: 800px;
+        margin-bottom: 120px;
     }
 
     .rule-1 {
-        margin-bottom: 800px;
+        margin-bottom: 130px;
     }
-        .rule-1 .rectangle {top: 1450px;}
+
     .rule-2 {
-        margin-bottom: 600px;
+        margin-bottom: 120px;
     }
 
     .rule-3 .bg-image {
-        width: 300px;
+        width: 355px;
+        height: 387px;
         background-size: contain;
-        left: 20%;
+        top: 21px;
+        left: 0;
     }
 
     .rule-3-bg .circle {
-        bottom: -700px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .rule-3-bg .bg-image {
+        top: 64px;
+        left: 10px;
+        width: 355px;
+        height: 387px;
+        background-size: contain;
     }
 
     .about {
-        bottom: -568px;
+        bottom: 102px;
+        right: -22px;
+    }
+
+    .morning .about-txt {
+        font-size: 1.1em;
     }
 
 
-
     /* DAY 480 - 759 *************************************************************************/
-    .day .myth-1-bg,
-    .day .myth-2-bg,
-    .day .myth-3-bg,
-    .day .risk-1-bg,
-    .day .risk-2-bg,
-    .day .risk-3-bg,
-    .day .rule-1-bg,
-    .day .rule-2-bg,
-    .day .rule-3-bg,
-    .day .rule-4-bg,
-    .evening .myth-1-bg,
-    .evening .myth-2-bg,
-    .evening .myth-3-bg,
-    .evening .risk-1-bg,
-    .evening .risk-2-bg,
-    .evening .risk-3-bg,
-    .evening .rule-1-bg,
-    .evening .rule-2-bg,
-    .evening .rule-3-bg,
-    .evening .rule-4-bg {
+    .bg-mobile-prop {
         width: 400px;
     }
 
@@ -3575,8 +3618,18 @@ body {
         left: 0;
     }
 
+    .evening .myth-2-bg .rectangles {
+        bottom: 68px;
+    }
+
+    .evening .myth-3 .bg-image {
+        left: 0;
+        bottom: 0;
+    }
+
     .evening .myth-3-bg .circle {
         left: -30px;
+        bottom: -88px;
     }
 
     .evening .risk-1-bg .bg-image {
@@ -3618,8 +3671,14 @@ body {
         left: 0;
     }
 
+    .evening .rule-4-bg .bg-image {
+        width: 355px;
+        height: 387px;
+        background-size: contain;
+    }
+
     .evening .about {
-        bottom: 0;
+        bottom: 40px;
         right: -22px;
     }
 
@@ -3660,6 +3719,18 @@ body {
 
     .section-link-list {
         margin: 12px 0;
+    }
+
+    .section-link-list > li > a,
+    .page-nav > li> a {
+        font-size: 0.8em;
+        width: 60px;
+        padding: 6px 0;
+    }
+
+    .section-link-list > li + li,
+    .page-nav > li + li {
+        margin-left: 3px;
     }
 
     .morning-left-bg,
@@ -3706,27 +3777,77 @@ body {
         margin-bottom: 22px;
     }
 
-    .day .myth-1-bg,
-    .day .myth-2-bg,
-    .day .myth-3-bg,
-    .day .risk-1-bg,
-    .day .risk-2-bg,
-    .day .risk-3-bg,
-    .day .rule-1-bg,
-    .day .rule-2-bg,
-    .day .rule-3-bg,
-    .day .rule-4-bg,
-    .evening .myth-1-bg,
-    .evening .myth-2-bg,
-    .evening .myth-3-bg,
-    .evening .risk-1-bg,
-    .evening .risk-2-bg,
-    .evening .risk-3-bg,
-    .evening .rule-1-bg,
-    .evening .rule-2-bg,
-    .evening .rule-3-bg,
-    .evening .rule-4-bg {
+    .bg-mobile-prop {
         width: 320px;
+    }
+
+    .morning .myth-2-bg .bg-image {
+        left: -100px;
+    }
+
+    .morning .myth-2 .rectangle {
+        width: 106px;
+        left: -75px;
+        top: -168px;
+    }
+
+    .morning .risk-1-bg .bg-image {
+        left: -160px;
+    }
+
+    .morning .risk-1-bg .rectangle {
+        bottom: 213px;
+    }
+
+    .morning .risk-2-bg .bg-image {
+        left: -115px;
+    }
+
+    .morning .risk-2-bg .circle {
+        right: -45px;
+    }
+
+    .morning .risk-3-bg .bg-image {
+        left: -136px;
+    }
+
+    .morning .rule-1 {
+        margin-bottom: 100px;
+    }
+
+    .morning .rule-2-bg .bg-image {
+        left: -48px;
+    }
+
+    .morning .rule-2-bg .rectangle {
+        width: 176px;
+    }
+
+    .morning .rule-3-bg {
+        height: 472px;
+        margin-top: 16px;
+    }
+
+    .morning .rule-3 .bg-image {
+        width: 260px;
+        height: 283px;
+        top: 0;
+    }
+
+    .morning .rule-3-bg .circle {
+        width: 320px;
+        height: 320px;
+        left: -29px;
+        top: 152px;
+    }
+
+    .morning .about {
+        bottom: 86px;
+        right: -22px;
+    }
+
+    .morning .about-txt {
+        font-size: 0.9em;
     }
 
     .day .myth-1 .bg-image {
@@ -3749,6 +3870,7 @@ body {
         margin-bottom: 90px;
     }
 
+
     .day .article-subtitle_small,
     .day .rule-1,
     .article-subtitle_small {
@@ -3761,6 +3883,10 @@ body {
 
     .day .risk-3 .bg-image {
         left: -94px;
+    }
+
+    .day .rule-2 .bg-image {
+        right: -5px;
     }
 
     .day .rule-4 .rectangle {
@@ -3790,6 +3916,7 @@ body {
 
     .evening .myth-2-bg .rectangles {
         left: -14px;
+        bottom: 64px;
     }
 
     .evening .risk-1-bg .bg-image {
@@ -3832,6 +3959,10 @@ body {
         left: -64px;
     }
 
+    .evening .rule-4-bg {
+        height: 472px;
+    }
+
     .evening .rule-4-bg .bg-image {
         width: 260px;
         height: 283px;
@@ -3846,14 +3977,12 @@ body {
     }
 
     .evening .about {
-        bottom: 181px;
+        bottom: 56px;
     }
 
     .about-txt {
         font-size: 0.9em;
     }
-
-
 
 }
 
@@ -3871,17 +4000,6 @@ body {
         margin-bottom: 476px;
     }
 
-    .section-link-list > li > a,
-    .page-nav > li> a {
-        font-size: 0.8em;
-        width: 60px;
-        padding: 6px 0;
-    }
-
-    .section-link-list > li + li,
-    .page-nav > li + li {
-        margin-left: 3px;
-    }
 }
 
 
