@@ -93,39 +93,38 @@ $(document).ready(function() {
 (function () {
 
     var scroll_is_being_animated = false;
-    var last_scrollTop = 0;
 
 
-    $(window).scroll(function (e) {
-        var $this = $(this);
+    $(window).on('mousewheel',function (e) {
+
+        // var $this = $(this);
         var $body = $("html, body");
+
+        var first_slide = $('.intro');
 
         if (scroll_is_being_animated) {
             e.preventDefault();
+            console.log(1);
             return;
         }
 
-        if ($this.scrollTop() > $this.height() || scroll_is_being_animated) {
-            last_scrollTop = $this.scrollTop();
+        if ($body.scrollTop() > first_slide.height()) {
             return;
         }
 
-        if ($this.scrollTop() > last_scrollTop) { // Скролл вниз
+        if (e.originalEvent.wheelDelta < 0) { // Скролл вниз
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: $(window).height() + 100}, 350, 'swing', function () {
+            $body.stop().animate({scrollTop: $(window).height()+50}, 500, function () {
                 scroll_is_being_animated = false;
             });
         }
-        else if ($this.scrollTop() < last_scrollTop) { // Скролл вверх
+        else if (e.originalEvent.wheelDelta > 0) { // Скролл вверх
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: 0}, 350, 'swing', function () {
+            $body.stop().animate({scrollTop: 0}, 500, 'swing', function () {
                 scroll_is_being_animated = false;
-                last_scrollTop = 0;
             });
         }
-
-
-        last_scrollTop = $this.scrollTop();
+        e.preventDefault();
 
 
     });
@@ -212,4 +211,11 @@ jQuery(function () {
             $('.popup').addClass('show');
         }
     });
+});
+
+
+jQuery(function() {
+
+
+
 });
