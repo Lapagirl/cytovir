@@ -213,9 +213,17 @@ jQuery(function () {
     });
 });
 
+jQuery(function () {
+    var intro = $(".intro");
+    var page_scroll_progress = $(".page-scroll-progress");
+    $(window).on('scroll', function (e) {
+        var intro_height = intro.height();
+        var max = $('body').height() - intro_height - $(window).height();
+        var current = $("html, body").scrollTop() - intro_height;
 
-jQuery(function() {
+        var scaleX = (current / max );
 
-
+        page_scroll_progress.css({transform: "skewX(-40deg) scaleX("+scaleX+")"});
+    });
 
 });
