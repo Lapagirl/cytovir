@@ -11,7 +11,7 @@
     <script src="/packages/jarallax-element.min.js"></script>
     <script defer src="/packages/fontawesome-all.min.js"></script>
     <script src="/script.js"></script>
-    <link href="/style.css" rel="stylesheet" />
+    <link href="/style.css?v=4" rel="stylesheet" />
     <title>Цитовир-3: Простые правила</title>
 </head>
 <body>
@@ -66,77 +66,77 @@
                             </div>
                         </div>
                         <div class="striped-circle"></div>
-                        <div class="glasses-shadow"></div>
-                        <div class="glasses"></div>
                         <div class="take" role="button">
                             <span class="take-txt">Взять с собой</span>
                         </div>
+                        <div class="glasses-shadow"></div>
+                        <div class="glasses" data-bag_item="1"></div>
                     </div>
                 </div>
 
                 <div class="things thing-2">
                     <div class="relative">
                         <div class="striped-circle"></div>
-                        <div class="umbrella-shadow"></div>
-                        <div class="umbrella"></div>
                         <div class="take" role="button">
                             <span class="left take-txt">Взять с собой</span>
                         </div>
+                        <div class="umbrella-shadow"></div>
+                        <div class="umbrella" data-bag_item="2"></div>
                     </div>
                 </div>
 
                 <div class="things thing-3">
                     <div class="relative">
                         <div class="striped-circle"></div>
-                        <div class="comb-shadow"></div>
-                        <div class="comb"></div>
                         <div class="take" role="button">
                             <span class="take-txt">Взять с собой</span>
                         </div>
+                        <div class="comb-shadow"></div>
+                        <div class="comb" data-bag_item="3"></div>
                     </div>
                 </div>
 
                 <div class="things thing-4">
                     <div class="relative">
                         <div class="striped-circle"></div>
-                        <div class="spirits-shadow"></div>
-                        <div class="spirits"></div>
                         <div class="take" role="button">
                             <span class="left take-txt">Взять с собой</span>
                         </div>
+                        <div class="spirits-shadow"></div>
+                        <div class="spirits" data-bag_item="4"></div>
                     </div>
                 </div>
 
                 <div class="things thing-5">
                     <div class="relative">
-                        <div class="water-shadow"></div>
-                        <div class="water"></div>
-                        <div class="striped-circle"></div>
                         <div class="take" role="button">
                             <span class="take-txt">Взять с собой</span>
                         </div>
+                        <div class="water-shadow"></div>
+                        <div class="water" data-bag_item="5"></div>
+                        <div class="striped-circle"></div>
                     </div>
                 </div>
 
                 <div class="things thing-6">
                     <div class="relative">
                         <div class="striped-circle"></div>
-                        <div class="cytovir-shadow"></div>
-                        <div class="cytovir"></div>
                         <div class="take" role="button">
                             <span class="left take-txt">Взять с собой</span>
                         </div>
+                        <div class="cytovir-shadow"></div>
+                        <div class="cytovir" data-bag_item="100"></div>
                     </div>
                 </div>
 
                 <div class="things thing-7">
                     <div class="relative">
                         <div class="striped-circle"></div>
-                        <div class="keys-shadow"></div>
-                        <div class="keys"></div>
                         <div class="take" role="button">
                             <span class="take-txt">Взять с собой</span>
                         </div>
+                        <div class="keys-shadow"></div>
+                        <div class="keys" data-bag_item="6"></div>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                 </nav>
 
                 <div class="title-left morning-left">
-                    <div class="bag"></div>
+                    <div class="bag js-bag"></div>
                     <div class="morning-left-bg"></div>
                 </div>
 
@@ -361,11 +361,12 @@
             <div class="take-1" role="button">
                 <span class="take-txt-1">Взять с собой</span>
             </div>
-            <div class="cytovir-img"></div>
+            <div class="cytovir-img" data-bag_item="100"></div>
         </div>
     </div>
 
-<!--<script>
+<script>
+    /*
     $(document).ready(function() {
 
         //Intro section height
@@ -452,7 +453,9 @@
 
 
     });
+    */
 
-</script>-->
+
+</script>
 </body>
 </html>
