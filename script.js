@@ -93,39 +93,38 @@ $(document).ready(function() {
 (function () {
 
     var scroll_is_being_animated = false;
-    var last_scrollTop = 0;
 
 
-    $(window).scroll(function (e) {
-        var $this = $(this);
+    $(window).on('mousewheel',function (e) {
+
+        // var $this = $(this);
         var $body = $("html, body");
+
+        var first_slide = $('.intro');
 
         if (scroll_is_being_animated) {
             e.preventDefault();
+            console.log(1);
             return;
         }
 
-        if ($this.scrollTop() > $this.height() || scroll_is_being_animated) {
-            last_scrollTop = $this.scrollTop();
+        if ($body.scrollTop() > first_slide.height()) {
             return;
         }
 
-        if ($this.scrollTop() > last_scrollTop) { // Скролл вниз
+        if (e.originalEvent.wheelDelta < 0) { // Скролл вниз
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: $(window).height() + 100}, 350, 'swing', function () {
+            $body.stop().animate({scrollTop: $(window).height()+50}, 500, function () {
                 scroll_is_being_animated = false;
             });
         }
-        else if ($this.scrollTop() < last_scrollTop) { // Скролл вверх
+        else if (e.originalEvent.wheelDelta > 0) { // Скролл вверх
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: 0}, 350, 'swing', function () {
+            $body.stop().animate({scrollTop: 0}, 500, 'swing', function () {
                 scroll_is_being_animated = false;
-                last_scrollTop = 0;
             });
         }
-
-
-        last_scrollTop = $this.scrollTop();
+        e.preventDefault();
 
 
     });
@@ -135,7 +134,7 @@ $(document).ready(function() {
 
 jQuery(function () {
 
-    var storage = localStorage;
+    var storage = sessionStorage;
 
     var taked_items = [];
 
@@ -161,11 +160,29 @@ jQuery(function () {
         item.addClass('animate');
         $this.addClass('hidden');
 
-        item.animate(item_styles, 1000, function () {
-            if ($this.is('.take-1 ')) {
-                location.href = $(".next-page-link").attr('href');
+
+
+        var bezier_params = {
+            start: {
+                x: item.position().left,
+                y: item.position().top,
+                angle: 50
+            },
+            end: {
+                x:item_styles.left,
+                y:item_styles.top,
+                angle: -100,
+                length: .5
             }
-        });
+        };
+
+        item.animate({path : new $.path.bezier(bezier_params)}, 1000);
+
+        // item.animate(item_styles, 1000, function () {
+        //     if ($this.is('.take-1 ')) {
+        //         location.href = $(".next-page-link").attr('href');
+        //     }
+        // });
 
         var item_id = item.data('bag_item');
 
@@ -178,15 +195,27 @@ jQuery(function () {
     });
 
     $(".next-page-link").click(function (e) {
+
+        if (window.matchMedia('(max-width: 1199px)').matches) {
+            return;
+        }
+
         var current_cytovir_id = $('.cytovir[data-bag_item]').data('bag_item');
 
         if (!current_cytovir_id) {
             throw  new Error('No cytovir item on current page');
         }
 
-        if (taked_items.indexOf(current_cytovir_id) == -1) {
+        if (taked_items.indexOf(current_cytovir_id) === -1) {
             e.preventDefault();
             $('.popup').addClass('show');
         }
     });
+});
+
+
+jQuery(function() {
+
+
+
 });
