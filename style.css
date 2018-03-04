@@ -3892,7 +3892,7 @@ body {
 .take.hidden:hover + div + div { animation: none}
 
 [data-bag_item] { transform: scale(1);  }
-[data-bag_item].animate { animation: scale_item 1s forwards, fadeOut .4s .7s forwards alternate !important; opacity: 1 !important; }
+[data-bag_item].animate { animation: scale_item 1s forwards, fadeOut .4s .7s forwards alternate !important; opacity: 1 !important;     transform-origin: 15% 15%;}
 
 .take.hidden { display: none; }
 .take.hidden ~ [data-bag_item] { opacity: 0; }

@@ -161,11 +161,29 @@ jQuery(function () {
         item.addClass('animate');
         $this.addClass('hidden');
 
-        item.animate(item_styles, 1000, function () {
-            if ($this.is('.take-1 ')) {
-                location.href = $(".next-page-link").attr('href');
+
+
+        var bezier_params = {
+            start: {
+                x: item.position().left,
+                y: item.position().top,
+                angle: 50
+            },
+            end: {
+                x:item_styles.left,
+                y:item_styles.top,
+                angle: -100,
+                length: .5
             }
-        });
+        };
+
+        item.animate({path : new $.path.bezier(bezier_params)}, 1000);
+
+        // item.animate(item_styles, 1000, function () {
+        //     if ($this.is('.take-1 ')) {
+        //         location.href = $(".next-page-link").attr('href');
+        //     }
+        // });
 
         var item_id = item.data('bag_item');
 
@@ -178,13 +196,18 @@ jQuery(function () {
     });
 
     $(".next-page-link").click(function (e) {
+
+        if (window.matchMedia('(max-width: 1199px)').matches) {
+            return;
+        }
+
         var current_cytovir_id = $('.cytovir[data-bag_item]').data('bag_item');
 
         if (!current_cytovir_id) {
             throw  new Error('No cytovir item on current page');
         }
 
-        if (taked_items.indexOf(current_cytovir_id) == -1) {
+        if (taked_items.indexOf(current_cytovir_id) === -1) {
             e.preventDefault();
             $('.popup').addClass('show');
         }
