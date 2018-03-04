@@ -2331,8 +2331,11 @@ body {
         margin-left: 18px;
     }
 
-    .page-nav > li > a {
+    .page-nav > li{
         width: 126px;
+    }
+
+    .page-nav > li > a {
         padding: 10px 0;
     }
 
@@ -3366,12 +3369,17 @@ body {
     .section-link-list > li {
         vertical-align: middle;
     }
+    .page-nav > li{
+        width: 80px;
 
+    }
+    .section-link-list > li > a{
+        width: 80px;
+    }
     .section-link-list > li > a,
     .page-nav > li> a {
         font-size: 1em;
         line-height: 1em;
-        width: 80px;
         padding: 6px 0;
     }
 
@@ -3381,7 +3389,7 @@ body {
         width: 10px;
     }
 
-    .page-nav > li> a,
+    .page-nav > li,
     .section-link-list > li > a {
         border: solid 1px rgb(255, 204, 0);
     }
@@ -3742,9 +3750,12 @@ body {
     }
 
     .section-link-list > li > a,
+    .page-nav > li {
+        width: 60px;
+    }
+    .section-link-list > li > a,
     .page-nav > li> a {
         font-size: 0.8em;
-        width: 60px;
         padding: 6px 0;
     }
 

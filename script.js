@@ -176,13 +176,11 @@ jQuery(function () {
             }
         };
 
-        item.animate({path : new $.path.bezier(bezier_params)}, 1000);
-
-        // item.animate(item_styles, 1000, function () {
-        //     if ($this.is('.take-1 ')) {
-        //         location.href = $(".next-page-link").attr('href');
-        //     }
-        // });
+        item.animate({path : new $.path.bezier(bezier_params)}, 1000, function () {
+            if ($this.is('.take-1 ')) {
+                location.href = $(".next-page-link").attr('href');
+            }
+        });
 
         var item_id = item.data('bag_item');
 
