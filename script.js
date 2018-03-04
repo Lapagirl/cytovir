@@ -46,20 +46,18 @@ $(document).ready(function() {
 
 
     //Fixing the elements
-/*    var windowHeight = $(window).height();*/
-    var sectionsNav = $('.sections-nav');
-    var pageNav = $('.page-nav');
-    var morningLeft = $('.title-left');
-    var sharing = $('.share');
+    function fixingEl() {
+        var sectionsNav = $('.sections-nav');
+        var pageNav = $('.page-nav');
+        var morningLeft = $('.title-left');
+        var sharing = $('.share');
 
 
-    var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2);
-    var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
-    var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
-    var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
+        var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2);
+        var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
+        var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
+        var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
 
-
-    $(window).scroll(function () {
         if($(document).scrollTop() >= sectionsNavPos) {
             sectionsNav.parent().addClass('fixed');
 
@@ -84,6 +82,11 @@ $(document).ready(function() {
         } else {
             sharing.removeClass('fixed');
         }
+    }
+
+    fixingEl();
+    $(window).scroll(function () {
+        fixingEl();
     });
 
 });
@@ -104,7 +107,6 @@ $(document).ready(function() {
 
         if (scroll_is_being_animated) {
             e.preventDefault();
-            console.log(1);
             return;
         }
 
@@ -125,8 +127,6 @@ $(document).ready(function() {
             });
         }
         e.preventDefault();
-
-
     });
 
 })();

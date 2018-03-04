@@ -402,6 +402,11 @@ body {
     text-transform: uppercase;
     line-height: 1.667;
     text-decoration: none;
+    text-shadow:
+        1px 0 1px #fff,
+        0 1px 1px #fff,
+        -1px 0 1px #fff,
+        0 -1px 1px #fff;
 }
 
 .sections-nav > li > a.active {
@@ -2134,7 +2139,7 @@ body {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    box-shadow: 20px 30px 60px 0 #dbdbdb;;
+    box-shadow: 20px 30px 60px 0 #dbdbdb;
     background-color: #ffcc00;
     padding: 57px 89px;
     top: 50%;
