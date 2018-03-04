@@ -3668,13 +3668,13 @@ body {
     }
 
     .page-nav-wrapper {
-        top: 18px;
+        top: 16px;
     }
 
     .page-nav > li + li:before {
         top: 13px;
         left: -7px;
-        width: 8px;
+        width: 7px;
         height: 1px;
     }
 
@@ -3774,6 +3774,84 @@ body {
     .next-page-link {
         font-size: 1em;
     }
+
+    .moon {
+        left: -9px;
+    }
+
+    .evening .myth-1 .bg-image {
+        right: 40px;
+    }
+
+    .evening .myth-2 .bg-image {
+        left: -134px;
+    }
+
+    .evening .myth-2-bg .rectangles {
+        left: -14px;
+    }
+
+    .evening .risk-1-bg .bg-image {
+        left: -98px;
+    }
+
+    .evening .risk-2 .bg-image {
+        left: -20px;
+    }
+
+    .evening .risk-2 .rectangle {
+        width: 100px;
+    }
+
+    .evening .risk-3 .circle {
+        left: 172px;
+    }
+
+    .evening .rules {
+        margin-bottom: 130px;
+    }
+
+    .evening .rule-1 .circle {
+        left: -121px;
+    }
+
+    .evening .rule-1 .bg-image {
+        left: 57px;
+    }
+
+    .evening .rule-2 .rectangle {
+        width: 110px;
+    }
+
+    .evening .rule-2 .bg-image {
+        left: -25px;
+    }
+
+    .star {
+        left: -64px;
+    }
+
+    .evening .rule-4-bg .bg-image {
+        width: 260px;
+        height: 283px;
+        background-size: contain;
+    }
+
+    .evening .rule-4-bg .circle {
+        width: 320px;
+        height: 320px;
+        top: 152px;
+        left: -29px;
+    }
+
+    .evening .about {
+        bottom: 181px;
+    }
+
+    .about-txt {
+        font-size: 0.9em;
+    }
+
 
 
 }
