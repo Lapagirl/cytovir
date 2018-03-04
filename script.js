@@ -59,7 +59,7 @@ $(document).ready(function() {
         var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
 
-        if($(document).scrollTop() >= sectionsNavPos) {
+        if($(document).scrollTop() >= pageNavOffset) {
             sectionsNav.parent().addClass('fixed');
 
         } else {
@@ -72,13 +72,13 @@ $(document).ready(function() {
             pageNav.parent().removeClass('fixed');
         }
 
-        if($(document).scrollTop() >=  morningLeftPos) {
+        if($(document).scrollTop() >=  pageNavOffset) {
             morningLeft.addClass('fixed');
         } else {
             morningLeft.removeClass('fixed');
         }
 
-        if($(document).scrollTop() >=  sharePos) {
+        if($(document).scrollTop() >=  pageNavOffset) {
             sharing.addClass('fixed');
         } else {
             sharing.removeClass('fixed');
