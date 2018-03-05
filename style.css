@@ -2144,20 +2144,17 @@ body {
 
 .popup {
     display: none;
-    width: 100%;
-    max-width: 600px;
+    width: 560px;
+    height: 554px;
     box-sizing: border-box;
-    box-shadow: 20px 30px 60px 0 #dbdbdb;
-    background-color: #ffcc00;
-    padding: 57px 89px;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
+    left: 55%;
+    -webkit-transform:  translate(-50%, -50%);
+    -moz-transform:     translate(-50%, -50%);
+    -ms-transform:      translate(-50%, -50%);
+    -o-transform:       translate(-50%, -50%);
+    transform:          translate(-50%, -50%);
+    background: url("img/popup-shadow.png") no-repeat;
 }
 
 .popup.show {
@@ -2166,9 +2163,50 @@ body {
     z-index: 100;
 }
 
+.popup-inner {
+    width: 431px;
+    height: 444px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-left: 26px;
+}
+
 .popup-content {
-    position: relative;
-    margin-top: 214px;
+    width: 435px;
+    height: inherit;
+    margin-left: -7px;
+    background: linear-gradient(135deg, #ffcc00 75%, #fff100);
+    border-bottom-right-radius: 120px 12px;
+    -webkit-transform:  skewX(-2deg);
+    -moz-transform:     skewX(-2deg);
+    -ms-transform:      skewX(-2deg);
+    -o-transform:       skewX(-2deg);
+    transform:          skewX(-2deg);
+
+}
+
+.popup-part-top {
+    margin-left: -7px;
+    width: 400px;
+    height: 444px;
+    background-color: #ffcc00;
+    z-index: 120;
+    border-bottom-right-radius: 20px 25px;
+    -webkit-transform:  skewX(-2deg);
+    -moz-transform:     skewX(-2deg);
+    -ms-transform:      skewX(-2deg);
+    -o-transform:       skewX(-2deg);
+    transform:          skewX(-2deg);
+}
+
+.popup-message {
+    position: absolute;
+    top: 112px;
+    left: 34px;
+    width: 365px;
+    height: 220px;
+    background: url(img/popup-message.png) no-repeat;
+    z-index: 120;
 }
 
 .attention-heading {
@@ -2179,8 +2217,9 @@ body {
 }
 
 .take-1 {
-    text-align: right;
-    margin-top: 18px;
+    position: absolute;
+    bottom: 154px;
+    right: 142px;
 }
 
 .take-txt-1 {
@@ -2217,13 +2256,17 @@ body {
 
 .cytovir-img {
     position: absolute;
-    top: -324px;
-    left: 50%;
-    width: 277px;
-    height: 294px;
-        margin-left: -138px;
-    background: url("img/cytovir.png") no-repeat;
-    background-size: contain;
+    top: -74px;
+    left: 146px;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background: url(img/cytovir.png) no-repeat 22px 22px;
+    background-size: 73%;
+    border: 9px solid #fff;
+    box-shadow:
+        inset 0 4px 8px 0 #dbdbdb,
+        0 3px 5px 0 #dbdbdb;
 }
 
 .attention-txt {
