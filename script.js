@@ -57,8 +57,8 @@ $(document).ready(function () {
         var pageNavOffset = $(".intro").height();
         var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length - 2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
-        var scroll_top = Math.round($(document).scrollTop());
-        
+        var scroll_top = Math.ceil($(document).scrollTop());
+
         if (scroll_top >= pageNavOffset) {
             sectionsNav.parent().addClass('fixed');
             pageNav.parent().addClass('fixed');
