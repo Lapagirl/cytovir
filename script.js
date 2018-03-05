@@ -213,19 +213,32 @@ jQuery(function () {
     var intro = $(".intro");
     var page_scroll_progress = $(".page-scroll-progress");
     $(window).on('scroll', function (e) {
+
+        var scroll_top = $("html, body").scrollTop();
+        var win_height = $(window).height();
+
         var intro_height = intro.height();
-        var max = $('body').height() - intro_height - $(window).height();
-        var current = $("html, body").scrollTop() - intro_height;
+        var max = $('body').height() - intro_height - win_height;
+        var current = scroll_top - intro_height;
 
         var scaleX = (current / max );
 
         page_scroll_progress.css({transform: "skewX(-40deg) scaleX(" + scaleX + ")"});
 
 
+        var visible_min = scroll_top + (win_height * .75);
+        var visible_max = scroll_top + (win_height * .25);
+
         $('.striped-circle').each(function () {
-            if ($(this).offset().top < $("html, body").scrollTop() + ($(window).height() * .75)) {
+
+            var offset_top = $(this).offset().top;
+
+            if (offset_top < visible_min && offset_top > visible_max) {
                 $(this).addClass('show');
+                return;
             }
+
+            $(this).removeClass('show');
         })
     });
 

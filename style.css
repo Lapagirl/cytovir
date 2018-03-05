@@ -598,11 +598,12 @@ body {
     top: 6276px;
 }
 
-.thing-4 .striped-circle.show {    left: 280px;        }
+.thing-4 .striped-circle.show {    left: 280px; transform:rotate(150deg)       }
 .thing-4 .striped-circle {
-left: -30%;
+    left: -30%;
     top: 14px;
     z-index: -2;
+    transform: rotate(0deg);
 }
 
 .thing-4 .left.take-txt {
@@ -638,9 +639,12 @@ left: -30%;
 
 .thing-9 .striped-circle {
     top: 178px;
-    left: 302px;
+    left: -50%;
+    transform: rotate(0deg);
+
 }
 
+.thing-9 .striped-circle.show {    left: 302px; transform:rotate(200deg)       }
 .thing-9 .left.take-txt {
     right: 706px;
 }
@@ -655,8 +659,11 @@ left: -30%;
 }
 
 .thing-11 .striped-circle {
-    left: 304px;
+    left: -50%;
+    transform: rotate(0deg);
 }
+
+.thing-11 .striped-circle.show {    left: 304px; transform:rotate(200deg)       }
 
 .thing-11 .cytovir,
 .thing-11 .cytovir-shadow {
@@ -684,16 +691,24 @@ left: -30%;
 }
 
 .thing-13 .striped-circle {
-    left: 306px;
+    left: -50%;
+    transform: rotate(0deg);
 }
+
+.thing-13 .striped-circle.show {    left: 306px; transform:rotate(200deg)       }
+
 
 .thing-14 {
     top: 11546px;
 }
 
 .thing-14 .striped-circle {
-    left: 456px;
+    left: -50%;
+    transform: rotate(0deg);
 }
+
+.thing-14 .striped-circle.show {    left: 456px; transform:rotate(200deg)       }
+
 
 .thing-14 .take-txt {
     right: 248px;
@@ -713,8 +728,12 @@ left: -30%;
 }
 
 .thing-16 .striped-circle {
-    left: 304px;
+    left: -50%;
+    transform: rotate(0deg);
 }
+
+.thing-16 .striped-circle.show {    left: 304px; transform:rotate(200deg)       }
+
 
 .thing-16 .cytovir,
 .thing-16 .cytovir-shadow {
@@ -869,14 +888,15 @@ left: -30%;
 .striped-circle {
     position: absolute;
     top: 86px;
-    left: 130%;
     background: url(img/circle.png) no-repeat;
     width: 149px;
     height: 149px;
     z-index: -2;
-        transition: left 1.5s;
+    transition: left 1.5s, transform 1.5s;
+    left: 130%; transform: rotate(150deg);
 }
-.striped-circle.show {left: 444px;}
+.striped-circle.show { left: 444px; transform: rotate(0deg) }
+
 
 .glasses,
 .glasses-shadow {
