@@ -227,13 +227,13 @@ jQuery(function () {
 
 
         var visible_min = scroll_top + (win_height * .75);
-        var visible_max = scroll_top + (win_height * .25);
+        // var visible_max = scroll_top + (win_height * .25);
 
         $('.striped-circle').each(function () {
 
             var offset_top = $(this).offset().top;
 
-            if (offset_top < visible_min && offset_top > visible_max) {
+            if (offset_top < visible_min ) {// && offset_top > visible_max
                 $(this).addClass('show');
                 return;
             }
