@@ -299,10 +299,7 @@ body {
 .page-nav > li {
     display: inline-block;
     position: relative;
-    width: 228px;
-    border: solid 2px rgb(255, 204, 0);
     border-radius: 25px;
-    overflow: hidden;
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -310,8 +307,7 @@ body {
     background: rgb(2, 74, 156);
     border: solid 2px rgb(2, 74, 156);
 }
-
-.page-nav > li > .page-scroll-progress {
+.page-nav > li  .page-scroll-progress {
     position: absolute;
     left: -10px;
     top: 0;
@@ -322,23 +318,26 @@ body {
     padding: 0 10px;
     transform-origin: 0;
     outline: 1px solid transparent;
-
+    z-index: -1;
 }
-
 .page-nav > li> a {
     font-family: "Circe Bold", sans-serif;
     display: inline-block;
-    width: 100%;
+    width: 228px;
     padding: 12px 0;
+    border: solid 2px rgb(255, 204, 0);
     color: rgb(255, 204, 0);
     text-transform: uppercase;
     font-size: 1.1em;
     line-height: 1.3em;
     text-decoration: none;
     text-align: center;
+    border-radius: 25px;
     box-sizing: border-box;
+    overflow: hidden;
+    vertical-align: top;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .page-nav > li + li {
@@ -356,10 +355,8 @@ body {
     left: -38px;
 }
 
-.page-nav > li.active  {
-    border-color: rgb(2, 74, 156);
-}
 .page-nav > li.active > a {
+    border-color: rgb(2, 74, 156);
     cursor: default;
 }
 
@@ -3360,10 +3357,6 @@ body {
         margin-left: 6px;
     }
 
-    .page-nav > li + li {
-        margin-left: 6px;
-    }
-
     .section-link-list > li {
         vertical-align: middle;
     }
@@ -3378,8 +3371,7 @@ body {
 
     .page-nav > li + li:before {
         top: 14px;
-        left: -10px;
-        width: 10px;
+        left: -22px;
     }
 
     .page-nav > li> a,
@@ -3719,11 +3711,6 @@ body {
     .share li {
         padding: 12px 8px;
     }
-
-
-    /*.intro {
-        min-height: 945px;
-    }*/
 
     .project-label {
         padding-left: 80px;
