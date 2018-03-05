@@ -282,9 +282,12 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
+    opacity: 0;
+    transition: opacity .8s;
 }
 
 .page-nav-wrapper.fixed {
+    opacity: 1;
     position: fixed;
 }
 
@@ -305,8 +308,12 @@ body {
 
 .page-nav > li.page-nav-item-bg {
     background: rgb(2, 74, 156);
-    border: solid 2px rgb(2, 74, 156);
 }
+
+.page-nav > li.page-nav-item-bg > a {
+    border-color: rgb(2, 74, 156);
+}
+
 .page-nav > li  .page-scroll-progress {
     position: absolute;
     left: -10px;
@@ -344,7 +351,7 @@ body {
     margin-left: 34px;
 }
 
-.page-nav > li + li:before {
+.page-nav > li:before {
     content: "";
     display: block;
     width: 38px;
@@ -352,7 +359,15 @@ body {
     background-color: rgb(255, 204, 0);
     position: absolute;
     top: 23px;
-    left: -38px;
+    right: -38px;
+}
+
+.page-nav > li:last-child:before {
+    display: none;
+}
+
+.page-nav > li.page-nav-item-bg:before {
+    background-color: rgb(2, 74, 156);
 }
 
 .page-nav > li.active > a {
@@ -2334,21 +2349,10 @@ body {
         padding: 10px 0;
     }
 
-    .page-nav > li + li:before {
-        content: "";
-        display: block;
-        width: 18px;
-        height: 2px;
-        background-color: rgb(255, 204, 0);
-        position: absolute;
-        top: 23px;
-        left: -24px;
-    }
-
-    .page-nav > li + li:before {
+    .page-nav > li:before {
         width: 22px;
         top: 21px;
-        left: -22px;
+        right: -22px;
     }
 
     .section-link-list {
@@ -3369,9 +3373,9 @@ body {
         padding: 6px 0;
     }
 
-    .page-nav > li + li:before {
+    .page-nav > li:before {
         top: 14px;
-        left: -22px;
+        right: -22px;
     }
 
     .page-nav > li> a,
@@ -3751,9 +3755,9 @@ body {
         top: 16px;
     }
 
-    .page-nav > li + li:before {
+    .page-nav > li:before {
         top: 13px;
-        left: -7px;
+        right: -7px;
         width: 7px;
         height: 1px;
     }
