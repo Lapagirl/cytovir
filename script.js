@@ -57,31 +57,22 @@ $(document).ready(function () {
         var pageNavOffset = $(".intro").height();
         var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length - 2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
-
-        if ($(document).scrollTop() >= pageNavOffset) {
+        var scroll_top = Math.round($(document).scrollTop());
+        
+        if (scroll_top >= pageNavOffset) {
             sectionsNav.parent().addClass('fixed');
+            pageNav.parent().addClass('fixed');
+            morningLeft.addClass('fixed');
+            sharing.addClass('fixed');
 
         } else {
             sectionsNav.parent().removeClass('fixed');
-        }
-
-        if ($(document).scrollTop() >= pageNavOffset) {
-            pageNav.parent().addClass('fixed');
-        } else {
             pageNav.parent().removeClass('fixed');
-        }
-
-        if ($(document).scrollTop() >= pageNavOffset) {
-            morningLeft.addClass('fixed');
-        } else {
             morningLeft.removeClass('fixed');
+            sharing.removeClass('fixed');
+
         }
 
-        if ($(document).scrollTop() >= pageNavOffset) {
-            sharing.addClass('fixed');
-        } else {
-            sharing.removeClass('fixed');
-        }
     }
 
     fixingEl();
@@ -233,7 +224,7 @@ jQuery(function () {
 
             var offset_top = $(this).offset().top;
 
-            if (offset_top < visible_min ) {// && offset_top > visible_max
+            if (offset_top < visible_min) {// && offset_top > visible_max
                 $(this).addClass('show');
                 return;
             }
