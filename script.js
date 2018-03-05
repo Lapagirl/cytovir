@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
     //Intro section height
     function introHeight() {
         var sectionHeight = $(window).height();
