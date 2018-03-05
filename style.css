@@ -598,9 +598,10 @@ body {
     top: 6276px;
 }
 
+.thing-4 .striped-circle.show {    left: 280px;        }
 .thing-4 .striped-circle {
+left: -30%;
     top: 14px;
-    left: 280px;
     z-index: -2;
 }
 
@@ -868,12 +869,14 @@ body {
 .striped-circle {
     position: absolute;
     top: 86px;
-    left: 444px;
+    left: 130%;
     background: url(img/circle.png) no-repeat;
     width: 149px;
     height: 149px;
     z-index: -2;
+        transition: left 1.5s;
 }
+.striped-circle.show {left: 444px;}
 
 .glasses,
 .glasses-shadow {
