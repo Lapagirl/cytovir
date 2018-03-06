@@ -235,3 +235,22 @@ jQuery(function () {
     });
 
 });
+
+jQuery(function () {
+
+    var share = Ya.share2('share', {
+        theme: {
+            copy: "hidden",
+            bare: true,
+            services: "vkontakte,facebook,twitter"
+        },
+        hooks: {
+            onready: function () {
+                $(".ya-share2__item_service_vkontakte .ya-share2__icon").html('<i class="fab fa-vk"></i>');
+                $(".ya-share2__item_service_facebook .ya-share2__icon").html('<i class="fab fa-facebook-f"></i>');
+                $(".ya-share2__item_service_twitter .ya-share2__icon").html('<i class="fab fa-twitter"></i>');
+            }
+        }
+    });
+
+});

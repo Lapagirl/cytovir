@@ -263,6 +263,7 @@ body {
     border-color: rgb(2, 74, 156);
 }
 
+
 .sections {
     position: relative;
 }
@@ -315,7 +316,6 @@ body {
 .rules {
     padding-top: 120px;
 }
-
 
 /* MORNING SECTION ****************************************************************************************************/
 
@@ -557,11 +557,17 @@ body {
     left: auto;
     /*padding-right: 42px;*/
     margin: 0 42px 0 0;
-    list-style: none;
+    padding-right: 42px;
     /*margin: 0;*/
     z-index: 110;
+}
+.share ul{
+    list-style: none;
+    /*margin: 0;*/
+  /*  z-index: 110;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 0
+    padding: 0;*/
+    margin: 0;
 }
 
 .share.fixed {
@@ -580,7 +586,7 @@ body {
 .share > li:last-child {
     border-bottom: solid 1px #e5e5e5;
 }
-
+.share .ya-share2__title{ display: none}
 .share .svg-inline--fa {
     width: 40px;
     height: 40px;
@@ -618,6 +624,7 @@ body {
     top: 3880px;
     min-height: 8204px;
 }
+
 
 
 .things {
@@ -682,7 +689,6 @@ body {
 .thing-7 {
     top: 12378px;
 }
-
 
 /* day things */
 .thing-8 {
@@ -2384,7 +2390,6 @@ body {
 
 
 
-
 /* MEDIA **************************************************************************************************************/
 
 @media screen and (max-width: 1456px) {
@@ -4011,6 +4016,10 @@ body {
         height: 26px;
     }
 
+    /*.share li {
+        padding: 12px 8px;
+    }
+*/
     .project-label {
         padding-left: 80px;
     }
@@ -4045,6 +4054,10 @@ body {
     .evening-left-bg {
         width: 40px;
     }
+/*
+    .page-nav-wrapper {
+        top: 16px;
+    }*/
 
     .page-nav > li:before {
         top: 13px;

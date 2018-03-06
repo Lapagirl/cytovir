@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script src="/packages/jquery/jquery-3.3.1.min.js"></script>
     <script src="/packages/jquery/jquery.path.js"></script>
     <script src="/packages/jarallax.min.js"></script>
@@ -14,11 +16,28 @@
     <script src="/script.js?v=9"></script>
     <link href="/style.css?v=9" rel="stylesheet" />
     <title>Цитовир-3: Простые правила</title>
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Как спланировать свой вечер, чтобы избавиться от накопленного за день стресса?">
+    <meta property="og:description" content="Специальный проект Цитовир-3 и vesti.ru">
+    <meta property="og:image" content="http://cytovir3.vesti.ru/img/sh-evening.jpg">
+    <meta property="og:url" content="http://cytovir3.vesti.ru/evening.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Как спланировать свой вечер, чтобы избавиться от накопленного за день стресса?">
+    <meta name="twitter:description" content="Специальный проект Цитовир-3 и vesti.ru">
+    <meta name="twitter:image" content="http://cytovir3.vesti.ru/img/sh-evening.jpg">
+    <meta name="title" content="Как спланировать свой вечер, чтобы избавиться от накопленного за день стресса?">
+    <meta name="description" content="Специальный проект Цитовир-3 и vesti.ru">
+    <link rel="image_src" href="http://cytovir3.vesti.ru/img/sh-evening.jpg">
+
+
 </head>
 <body>
     <div class="logo">
         <a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&ad=652986&bt=21&pid=2719799&bid=5517127&bn=5517127&rnd=1424561003" target="_blank">
             <img class="logo-img" src="img/logo.png" width="127" height="160" alt="Цитовир логотип">
+            <img src="https://ad.adriver.ru/cgi-bin/rle.cgi?sid=1&ad=652986&bt=21&pid=2719799&bid=5517126&bn=5517126&rnd=693360335" style="visibility: hidden; position: absolute; top: -999px; left: -999px;">
         </a>
     </div>
 
@@ -126,18 +145,7 @@
                 </div>
 
                 <!--Sharing ----------------------------------------------------------------->
-                <ul class="share">
-                    <li role="button">
-                        <i class="fab fa-vk"></i>
-                    </li>
-                    <li role="button">
-                        <i class="fab fa-facebook-f"></i>
-                    </li>
-                    <li role="button">
-                        <i class="fab fa-twitter"></i>
-                    </li>
-                </ul>
-
+                <div class="share" id="share"></div>
 
                 <p class="central-txt ">Время от окончания рабочего дня и до момента отхода ко сну может быть не менее интересным и насыщенным, чем день. Главное, чтобы сил хватило и на семью, и на спорт, и на театры, и на встречи с друзьями. Как правильно спланировать остаток дня, чтобы избавиться от накопленного стресса и сохранить крепкое здоровье?</p>
 
