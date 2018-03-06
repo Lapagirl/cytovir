@@ -3033,6 +3033,14 @@ body {
 
 /* EVENING 760 - 1199 *************************************/
 
+    .evening .myths {
+        margin-bottom: 220px;
+    }
+
+    .evening .myth-1 {
+        margin-bottom: 390px;
+    }
+
     .evening .myth-1-bg {
         height: 400px;
         margin: auto;
@@ -3047,6 +3055,10 @@ body {
         top: auto;
         right: 0;
         bottom: 52px;
+    }
+
+    .evening .myth-2 {
+        margin-bottom: 330px;
     }
 
     .evening .myth-2-bg {
@@ -3085,11 +3097,13 @@ body {
 
 
     .evening .risks {
-        margin-bottom: 60px;
+        /*margin-bottom: 60px;*/
+        margin-bottom: 210px;
     }
 
     .evening .risk-1 {
-        margin-bottom: 130px;
+        /*margin-bottom: 130px;*/
+        margin-bottom: 230px;
     }
 
     .evening .risk-1-bg {
@@ -3104,7 +3118,8 @@ body {
     }
 
     .evening .risk-2 {
-        margin-bottom: 70px;
+        /*margin-bottom: 70px;*/
+        margin-bottom: 270px;
     }
 
     .evening .risk-2-bg {
@@ -3162,6 +3177,10 @@ body {
         bottom: 0;
     }
 
+    .evening .rule-2 {
+        margin-bottom: 395px;
+    }
+
     .evening .rule-2 .right-column {
         margin: 0;
         padding: 0;
@@ -3188,6 +3207,7 @@ body {
     .evening .rule-3 .rectangle {
         top: -427px;
         left: 0;
+        height: 477px;
     }
 
     .evening .rule-3 .bg-image {
