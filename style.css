@@ -287,7 +287,7 @@ body {
     position: absolute;
     width: 480px;
     height: 480px;
-    bottom: -230px;
+    bottom: -325px;
     left: 523px;
     z-index: 2;
 }
@@ -622,14 +622,10 @@ body {
 }
 
 .evening .dots-bg {
-    background: url("img/evening/evening-dots.png") no-repeat;
-    /*top: 2856px;*/
+    background: url("img/evening/dots-evening.png") no-repeat;
     top: 3880px;
-    /*min-height: 6980px;*/
-    min-height: 10381px;
-    width: 1401px;
+    min-height: 8204px;
 }
-
 
 
 .things {
@@ -1562,7 +1558,7 @@ body {
 
 .about {
     position: absolute;
-    bottom: -164px;
+    bottom: -195px;
     left: 734px;
 }
 
@@ -1597,7 +1593,7 @@ body {
     height: 480px;
     border-radius: 50%;
     position: absolute;
-    bottom: -230px;
+    bottom: -325px;
     left: 523px;
     background-color: #ffcc00;
     z-index: -2;
