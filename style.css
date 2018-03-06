@@ -76,6 +76,7 @@ body {
 
 .absolute {
     position: absolute;
+    z-index: 5;
 }
 
 .relative {
@@ -289,7 +290,6 @@ body {
     height: 480px;
     bottom: -325px;
     left: 523px;
-    z-index: 2;
 }
 
 .evening .rule-4 .cytovir-click-pixel {
@@ -307,16 +307,7 @@ body {
     height: 480px;
     bottom: -565px;
     left: 514px;
-    z-index: 2;
 }
-
-.zeropixel{
-    position:absolute;
-    left: -999px;
-    right: -9999px;
-    visibility: hidden
-}
-
 
 
 .myths,
@@ -2854,6 +2845,24 @@ body {
         left: 20px;
     }
 
+    .absolute {
+        width: 540px;
+        margin: auto;
+    }
+
+    .morning .rule-3 .cytovir-click-pixel {
+        width: 545px;
+        height: 408px;
+        bottom: -469px;
+        left: 107px;
+    }
+
+    .morning .rule-3 .circle.cytovir-click-pixel {
+        bottom: -670px;
+        left: 261px;
+        width: 700px;
+    }
+
     .next-page-link {
         font-size: 1.4em;
     }
@@ -3327,15 +3336,16 @@ body {
     }
 
     .evening .rule-4 .cytovir-click-pixel {
-        width: 358px;
+        width: 567px;
         height: 414px;
         bottom: -488px;
-        left: 194px;
+        left: 130px;
     }
 
     .evening .rule-4 .circle.cytovir-click-pixel {
         bottom: -740px;
-        left: 381px;
+        left: 300px;
+        width: 715px;
     }
 
     .about-txt {
@@ -3773,6 +3783,16 @@ body {
         background-size: contain;
     }
 
+    .morning .rule-3 .cytovir-click-pixel {
+        left: 14px;
+        width: 418px;
+    }
+
+    .morning .rule-3 .circle.cytovir-click-pixel {
+        width: 569px;
+        left: 14px;
+    }
+
     .about {
         bottom: 102px;
         left: 118px;
@@ -3967,14 +3987,15 @@ body {
     }
 
     .evening .rule-4 .cytovir-click-pixel {
-        width: 315px;
+        width: 425px;
         height: 359px;
         bottom: -434px;
-        left: 104px;
+        left: 0;
     }
 
     .evening .rule-4 .circle.cytovir-click-pixel {
-        left: 90px;
+        width: 578px;
+        left: 0;
     }
 
 }
@@ -4123,9 +4144,23 @@ body {
         top: 152px;
     }
 
+    .morning .rule-3 .cytovir-click-pixel {
+        left: 0;
+        bottom: -278px;
+        width: 245px;
+        height: 263px;
+    }
+
+    .morning .rule-3 .circle.cytovir-click-pixel {
+        left: 0;
+        bottom: -488px;
+        width: 292px;
+        height: 304px;
+    }
+
     .morning .about {
         bottom: 86px;
-        right: -22px;
+        left: 32px;
     }
 
     .morning .about-txt {
@@ -4269,16 +4304,16 @@ body {
     }
 
     .evening .rule-4 .cytovir-click-pixel {
-        width: 238px;
+        width: 256px;
         height: 266px;
         bottom: -265px;
-        left: 7px;
+        left: 0;
     }
 
     .evening .rule-4 .circle.cytovir-click-pixel {
-        left: -31px;
+        left: 0;
         bottom: -472px;
-        width: 323px;
+        width: 303px;
         height: 323px;
     }
 
