@@ -543,13 +543,12 @@ body {
 
 .dots-bg {
     position: absolute;
-    background: url('img/dots.png') no-repeat;
-    min-height: 7875px;
+    background: url(img/dots-morning.png) no-repeat;
+    min-height: 9741px;
     width: 1440px;
     left: 50%;
     transform: translateX(-50%);
-    /*top: 2660px;*/
-    top: 3064px;
+    top: 3077px;
 }
 
 .day .dots-bg {
@@ -579,14 +578,10 @@ body {
 }
 
 .thing-1 {
-    /*top: 2505px;*/
- /*   top: 3400px;*/
     top: 2894px;
 }
 
 .thing-2 {
- /*   top: 3698px;*/
-  /*  top: 5090px;*/
     top: 4470px;
 }
 
@@ -596,16 +591,11 @@ body {
 
 
 .thing-3 {
-    /*top: 4994px;*/
-    /*top: 6394px;*/
-    /*top: 7070px;*/
-    top: 6156px;
+    top: 6123px;
 }
 
 .thing-4 {
-/*    top: 6276px;*/
-    /*top: 8246px;*/
-    top: 7519px;
+    top: 7481px;
 }
 
 .thing-4 .striped-circle {
@@ -620,15 +610,11 @@ body {
 }
 
 .thing-5 {
-  /*  top: 7634px;*/
-    /*top: 10136px;*/
-    top: 8990px;
+    top: 8907px;
 }
 
 .thing-6 {
-  /*  top: 8787px;*/
-    /*top: 12000px*/
-    top: 10516px;
+    top: 10416px;
 }
 
 .thing-6 .left.take-txt {
@@ -637,9 +623,7 @@ body {
 }
 
 .thing-7 {
-/*    top: 10316px;*/
-   /* top: 20000px;*/
-    top: 12500px;
+    top: 12378px;
 }
 
 /* day things */
@@ -1226,9 +1210,6 @@ body {
 }
 
 .myth-1 {
-  /*margin-bottom: 100px;*/
-
-/*  margin-bottom: 550px;*/
     margin-bottom: 300px;
 }
 
@@ -1255,9 +1236,6 @@ body {
 }
 
 .myth-2 {
-   /* margin-bottom: 280px;*/
-
-  /*  margin-bottom: 700px;*/
     margin-bottom: 480px;
 }
 
@@ -1304,32 +1282,20 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 30px 20px #ffcc00;
     box-sizing: border-box;
-    /*top: 190px;*/
     top: 250px;
     position: relative;
 }
 
 .myths {
-    /*margin-bottom: 346px;*/
-
-    /*margin-bottom: 500px;*/
     margin-bottom: 546px;
 }
 
 
 .risks {
-   /* margin-bottom: 475px;*/
-
-  /*  margin-bottom: 586px;*/
- /*   margin-bottom: 830px;*/
     margin-bottom: 675px;
 }
 
 .risk-1 {
-   /* margin-bottom: 502px;*/
-
-    /*margin-bottom: 900px;*/
-  /*  margin-bottom: 1050px;*/
     margin-bottom: 900px;
 }
 
@@ -1354,8 +1320,6 @@ body {
 }
 
 .risk-2 {
-   /* margin-bottom: 502px;*/
-   /* margin-bottom: 1068px;*/
     margin-bottom: 702px;
 }
 
@@ -1407,9 +1371,6 @@ body {
 }
 
 .rule-1 {
-    /*margin-bottom: 684px;*/
-
-/*    margin-bottom: 800px;*/
     margin-bottom: 884px;
 }
 
@@ -1424,7 +1385,6 @@ body {
 
 .rule-1 .bg-image {
     position: absolute;
-    /*top: -28px;*/
     top: -280px;
     right: 300px;
     background: url(img/girl-orange.jpg) no-repeat;
@@ -1435,9 +1395,7 @@ body {
 
 .rule-1 .circle {
     position: absolute;
-/*    top: 210px;*/
     top: 152px;
-   /* right: 100px;*/
     right: 20px;
     width: 468px;
     height: 468px;
@@ -1447,8 +1405,6 @@ body {
 }
 
 .rule-2 {
-    /*margin-bottom: 494px;*/
-    /*margin-bottom: 1200px;*/
     margin-bottom: 770px;
 }
 
@@ -1536,7 +1492,6 @@ body {
 }
 
 .rules {
-   /* margin-bottom: 710px;*/
     margin-bottom: 910px;
 }
 
@@ -1868,7 +1823,6 @@ body {
     right: 475px;
     width: 344px;
     height: 393px;
-    /*overflow: hidden;*/
     z-index: -3;
 }
 
@@ -2522,7 +2476,6 @@ body {
     }
 
     .myth-1 {
-       /* margin-bottom: 40px;*/
         margin-bottom: 190px;
     }
 
@@ -2543,7 +2496,6 @@ body {
     }
 
     .myth-2 {
-      /*  margin-bottom: 82px;*/
         margin-bottom: 332px;
     }
 
@@ -2570,7 +2522,6 @@ body {
     }
 
     .morning .myth-3-bg {
-       /* top: 100px;*/
         top: 260px;
         right: 0;
         left: auto;
@@ -2584,12 +2535,10 @@ body {
     }
 
     .risks {
-        /*margin-bottom: 190px;*/
         margin-bottom: 650px;
     }
 
     .risk-1 {
-       /* margin-bottom: 170px;*/
         margin-bottom: 320px;
     }
 
@@ -2611,7 +2560,6 @@ body {
     }
 
     .risk-2 {
-        /*margin-bottom: 180px;*/
         margin-bottom: 330px;
     }
 
@@ -2656,7 +2604,6 @@ body {
     }
 
     .rule-1 {
-        /*margin-bottom: 190px;*/
         margin-bottom: 340px;
     }
 
@@ -2700,7 +2647,6 @@ body {
     }
 
     .rule-2 {
-        /*margin-bottom: 190px;*/
         margin-bottom: 570px;
     }
 
