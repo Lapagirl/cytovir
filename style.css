@@ -553,7 +553,8 @@ body {
 
 .day .dots-bg {
     background: url("img/day/dots-day.png") no-repeat;
-    top: 2850px;
+    /*top: 2850px;*/
+    top: 3970px;
     min-height: 8734px;
 }
 
