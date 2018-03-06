@@ -504,11 +504,12 @@ body {
     right:  calc((100% - 1440px) / 2);
     left: auto;
     padding-right: 42px;
-    list-style: none;
     margin: 0;
     z-index: 110;
 }
-
+.share ul{
+    list-style: none;
+}
 .share.fixed {
     position: fixed;
 }
@@ -525,7 +526,7 @@ body {
 .share > li:last-child {
     border-bottom: solid 1px #e5e5e5;
 }
-
+.share .ya-share2__title{ display: none}
 .share .svg-inline--fa {
     width: 40px;
     height: 40px;

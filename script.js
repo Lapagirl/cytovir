@@ -235,3 +235,18 @@ jQuery(function () {
     });
 
 });
+
+jQuery(function () {
+
+    var share = Ya.share2('share', {
+        content: {
+            url: 'http://cytovir3.vesti.ru'
+        },
+        theme: {
+            copy: "hidden",
+            bare: true,
+            services: "vkontakte,facebook,twitter"
+        }
+    });
+
+});
