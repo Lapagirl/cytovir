@@ -495,7 +495,7 @@ body {
 
 
 
-    /* SHARE ************************************************************************************************************/
+/* SHARE ************************************************************************************************************/
 
 .share {
     position: absolute;
@@ -628,13 +628,16 @@ body {
     top: 12378px;
 }
 
+
 /* day things */
 .thing-8 {
-    top: 2696px;
+    /*top: 2696px;*/
+    top: 3800px;
 }
 
 .thing-9 {
-    top: 4102px;
+    /*top: 4102px;*/
+    top: 5368px;
 }
 
 .thing-9 .striped-circle {
@@ -651,11 +654,13 @@ body {
 
 
 .thing-10 {
-    top: 5314px;
+   /* top: 5314px;*/
+    top: 7030px;
 }
 
 .thing-11 {
-    top: 6374px;
+    /*top: 6374px;*/
+    top: 8574px;
 }
 
 .thing-11 .striped-circle {
@@ -677,11 +682,13 @@ body {
 }
 
 .thing-12 {
-    top: 7778px;
+    /*top: 7778px;*/
+    top: 10200px;
 }
 
 .thing-13 {
-    top: 8874px;
+    /*top: 8874px;*/
+    top: 11530px;
 }
 
 .thing-13 .left.take-txt {
@@ -699,7 +706,8 @@ body {
 
 
 .thing-14 {
-    top: 11546px;
+   /* top: 11546px;*/
+    top: 14705px;
 }
 
 .thing-14 .striped-circle {
@@ -1559,11 +1567,14 @@ body {
 /* DAY ****************************************************************************************************************/
 
 .day .myths {
-    margin-bottom: 367px;
+ /*   margin-bottom: 367px;*/
+    margin-bottom: 1000px;
 }
 
 .day .myth-1 {
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
+    margin-bottom: 270px;
+
 }
 
 .day .myth-1 .rectangle {
@@ -1599,7 +1610,8 @@ body {
 }
 
 .day .myth-2 {
-    margin-bottom: 138px;
+    /*margin-bottom: 138px;*/
+    margin-bottom: 600px;
 }
 
 .day .myth-2 .rectangle {
@@ -1640,11 +1652,13 @@ body {
 
 
 .day .risks {
-    margin-bottom: 320px;
+   /* margin-bottom: 320px;*/
+    margin-bottom: 800px;
 }
 
 .day .risk-1 {
-    margin-bottom: 398px;
+    /*margin-bottom: 398px;*/
+    margin-bottom: 520px;
 }
 
 .day .risk-1 .left-column .article-txt {
@@ -1676,7 +1690,8 @@ body {
 }
 
 .day .risk-2 {
-    margin-bottom: 514px;
+    /*margin-bottom: 514px;*/
+    margin-bottom: 1014px;
 }
 
 .day .risk-2 .right-column {
@@ -1730,7 +1745,8 @@ body {
 }
 
 .day .rule-1 {
-    margin-bottom: 850px;
+    /*margin-bottom: 850px;*/
+    margin-bottom: 1100px;
 }
 
 .day .rule-1 .bg-image {
@@ -1760,7 +1776,8 @@ body {
 }
 
 .day .rule-2 {
-    margin-bottom: 424px;
+    /*margin-bottom: 424px;*/
+    margin-bottom: 550px;
 }
 
 .day .rule-2 .left-column {
@@ -1782,7 +1799,8 @@ body {
 }
 
 .day .rule-3 {
-    margin-bottom: 496px;
+    /*margin-bottom: 496px;*/
+    margin-bottom: 770px;
 }
 
 .day .rule-3 .circle {
