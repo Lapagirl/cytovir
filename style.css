@@ -560,7 +560,8 @@ body {
 
 .evening .dots-bg {
     background: url("img/evening/dots-evening.png") no-repeat;
-    top: 2856px;
+    /*top: 2856px;*/
+    top: 3880px;
     min-height: 6980px;
 }
 
@@ -724,7 +725,8 @@ body {
 }
 
 .thing-15 {
-    top: 2708px;
+    /*top: 2708px;*/
+    top: 3700px;
 }
 
 .thing-15 .bubble {
@@ -733,7 +735,8 @@ body {
 }
 
 .thing-16 {
-    top: 4418px;
+    /*top: 4418px;*/
+    top: 6010px;
 }
 
 .thing-16 .striped-circle {
@@ -755,7 +758,8 @@ body {
 }
 
 .thing-17 {
-    top: 6406px;
+    /*top: 6406px;*/
+    top: 8400px;
 }
 
 
@@ -1851,12 +1855,14 @@ body {
 /* EVENING PAGE *******************************************************************************************************/
 
 .evening .myths {
-    margin-bottom: 236px;
+    /*margin-bottom: 236px;*/
+    margin-bottom: 770px;
 }
 
 
 .evening .myth-1 {
-    margin-bottom: 133px;
+    /*margin-bottom: 133px;*/
+    margin-bottom: 500px;
 }
 
 .moon {
@@ -1897,7 +1903,8 @@ body {
 
 
 .evening .myth-2 {
-    margin-bottom: 136px;
+    /*margin-bottom: 136px;*/
+    margin-bottom: 300px;
 }
 
 .evening .myth-2-bg .rectangles {
@@ -1986,11 +1993,13 @@ body {
 }
 
 .evening .risks {
-    margin-bottom: 136px;
+    /*margin-bottom: 136px;*/
+    margin-bottom: 250px;
 }
 
 .evening .risk-1 {
-    margin-bottom: 85px;
+   /* margin-bottom: 85px;*/
+    margin-bottom: 280px;
 }
 
 .evening .risk-1-bg .bg-image {
@@ -2003,13 +2012,15 @@ body {
 }
 
 .evening .risk-2 {
-    margin-bottom: 388px;
+    /*margin-bottom: 388px;*/
+    margin-bottom: 800px;
 }
 
 .evening .risk-2 .bg-image {
     position: absolute;
     top: 105px;
-    left: 438px;
+    /*left: 438px;*/
+    left: 396px;
     width: 323px;
     height: 462px;
     background: url("img/evening/woman-stress.jpg") no-repeat;
@@ -2019,7 +2030,8 @@ body {
 .evening .risk-2 .rectangle {
     position: absolute;
     top: -14px;
-    left: 193px;
+   /* left: 193px;*/
+    left: 148px;
     width: 384px;
     height: 396px;
     background-color: #ffcc00;
@@ -2053,7 +2065,9 @@ body {
 }
 
 .evening .rule-1 {
-    margin-bottom: 762px;
+    /*margin-bottom: 762px;*/
+    margin-bottom: 1070px;
+
 }
 
 .evening .rule-1 .right-column {
@@ -2083,7 +2097,8 @@ body {
 }
 
 .evening .rule-2 {
-    margin-bottom: 172px;
+    /*margin-bottom: 172px;*/
+    margin-bottom: 350px;
 }
 
 .evening .rule-2 .right-column {
@@ -2111,7 +2126,8 @@ body {
 }
 
 .evening .rule-3 {
-    margin-bottom: 264px;
+    /*margin-bottom: 264px;*/
+    margin-bottom: 450px;
 }
 
 .evening .rule-3 .rectangle {
