@@ -306,7 +306,8 @@ body {
     width: 480px;
     height: 480px;
     bottom: -565px;
-    left: 514px;;
+    left: 514px;
+    z-index: 2;
 }
 
 .zeropixel{
@@ -2275,7 +2276,7 @@ body {
 
 .evening .about {
     bottom: -452px;
-    right: 484px;
+    /*right: 484px;*/
 }
 
 
@@ -3316,13 +3317,25 @@ body {
     }
 
     .evening .rule-4-bg .circle {
-        right: -100px;
-        top: 182px;
+        left: 207px;
+        top: 260px;
     }
 
     .evening .rule-4-bg .bg-image {
         left: 10px;
-        top: 0;
+        top: 77px;
+    }
+
+    .evening .rule-4 .cytovir-click-pixel {
+        width: 358px;
+        height: 414px;
+        bottom: -488px;
+        left: 194px;
+    }
+
+    .evening .rule-4 .circle.cytovir-click-pixel {
+        bottom: -740px;
+        left: 381px;
     }
 
     .about-txt {
@@ -3334,8 +3347,8 @@ body {
     }
 
     .evening .about {
-        bottom: 0;
-        right: -85px;
+        bottom: -66px;
+        left: 352px;
     }
 
 
@@ -3947,8 +3960,21 @@ body {
     }
 
     .evening .about {
-        bottom: 40px;
-        right: -22px;
+       /* bottom: 40px;
+        right: -22px;*/
+        bottom: -48px;
+        left: 148px;
+    }
+
+    .evening .rule-4 .cytovir-click-pixel {
+        width: 315px;
+        height: 359px;
+        bottom: -434px;
+        left: 104px;
+    }
+
+    .evening .rule-4 .circle.cytovir-click-pixel {
+        left: 90px;
     }
 
 }
@@ -4223,6 +4249,7 @@ body {
         width: 260px;
         height: 283px;
         background-size: contain;
+        top: 0;
     }
 
     .evening .rule-4-bg .circle {
@@ -4234,10 +4261,25 @@ body {
 
     .evening .about {
         bottom: 56px;
+        left: 53px;
     }
 
     .about-txt {
         font-size: 0.9em;
+    }
+
+    .evening .rule-4 .cytovir-click-pixel {
+        width: 238px;
+        height: 266px;
+        bottom: -265px;
+        left: 7px;
+    }
+
+    .evening .rule-4 .circle.cytovir-click-pixel {
+        left: -31px;
+        bottom: -472px;
+        width: 323px;
+        height: 323px;
     }
 
 }
