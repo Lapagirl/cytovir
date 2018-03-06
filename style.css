@@ -74,6 +74,10 @@ body {
     color: #000;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .relative {
     position: relative;
 }
@@ -192,6 +196,10 @@ body {
     text-decoration: none;
 }
 
+.link.blue {
+    color: rgb(2, 74, 156);
+}
+
 .link:hover {
     text-decoration: underline;
 }
@@ -254,16 +262,68 @@ body {
     border-color: rgb(2, 74, 156);
 }
 
-
 .sections {
     position: relative;
 }
+
+
+/* ADV PIXELS *************************************************************************/
+
+.cytovir-click-pixel {
+    display: block;
+    position: absolute;
+}
+
+.morning .rule-3 .cytovir-click-pixel {
+    width: 404px;
+    height: 441px;
+    position: absolute;
+    bottom: -100px;
+    left: 306px;
+}
+
+.morning .rule-3 .circle.cytovir-click-pixel {
+    display: block;
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    bottom: -230px;
+    left: 523px;
+    z-index: 2;
+}
+
+.evening .rule-4 .cytovir-click-pixel {
+    width: 404px;
+    height: 441px;
+    position: absolute;
+    bottom: -438px;
+    left: 357px;
+}
+
+.evening .rule-4 .circle.cytovir-click-pixel {
+    display: block;
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    bottom: -565px;
+    left: 514px;;
+}
+
+.zeropixel{
+    position:absolute;
+    left: -999px;
+    right: -9999px;
+    visibility: hidden
+}
+
+
 
 .myths,
 .risks,
 .rules {
     padding-top: 120px;
 }
+
 
 /* MORNING SECTION ****************************************************************************************************/
 
@@ -675,8 +735,15 @@ body {
 .thing-11 .striped-circle.show {    left: 304px; transform:rotate(200deg)       }
 
 .thing-11 .cytovir,
-.thing-11 .cytovir-shadow {
+.thing-11 .cytovir-shadow,
+.thing-11 .cytovir-click-pixel {
     left: 372px;
+}
+
+.thing-11 .cytovir-click-pixel {
+    width: 186px;
+    height: 210px;
+    top: 59px;
 }
 
 .thing-11 .left.take-txt {
@@ -750,8 +817,15 @@ body {
 
 
 .thing-16 .cytovir,
-.thing-16 .cytovir-shadow {
+.thing-16 .cytovir-shadow,
+.thing-16 .cytovir-click-pixel {
     left: 370px;
+}
+
+.thing-16 .cytovir-click-pixel {
+    width: 186px;
+    height: 210px;
+    top: 59px;
 }
 
 .thing-16 .left.take-txt {
@@ -1012,6 +1086,13 @@ body {
     top: 59px;
     left: 515px;
     z-index: -1;
+}
+
+.thing-6 .cytovir-click-pixel {
+    width: 186px;
+    height: 210px;
+    top: 59px;
+    left: 515px;
 }
 
 .cytovir {
@@ -1479,7 +1560,7 @@ body {
 .about {
     position: absolute;
     bottom: -164px;
-    right: 472px;
+    left: 734px;
 }
 
 .about-txt {
@@ -1514,9 +1595,9 @@ body {
     border-radius: 50%;
     position: absolute;
     bottom: -230px;
-    right: 437px;
+    left: 523px;
     background-color: #ffcc00;
-    z-index: -1;
+    z-index: -2;
 }
 
 .rule-3-bg .bg-image {
@@ -2178,7 +2259,7 @@ body {
     border-radius: 50%;
     position: absolute;
     bottom: -565px;;
-    right: 448px;
+    left: 514px;
     background-color: #ffcc00;
     z-index: -1;
 }
@@ -2293,6 +2374,8 @@ body {
 }
 
 .cytovir-img {
+    display: block;
+    text-decoration: none;
     position: absolute;
     top: -74px;
     left: 146px;
@@ -2306,6 +2389,7 @@ body {
         inset 0 4px 8px 0 #dbdbdb,
         0 3px 5px 0 #dbdbdb;
 }
+
 
 
 
@@ -2743,6 +2827,7 @@ body {
 
     .rule-3-bg .circle {
         bottom: 0;
+        left: auto;
         right: -110px;
     }
 
