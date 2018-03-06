@@ -363,7 +363,7 @@ body {
     display: inline-block;
     position: relative;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
 }
 
 .page-nav > li.page-nav-item-bg {
@@ -563,10 +563,13 @@ body {
     top: 32px;
     right:  calc((100% - 1440px) / 2);
     left: auto;
-    padding-right: 42px;
+    /*padding-right: 42px;*/
+    margin: 0 42px 0 0;
     list-style: none;
-    margin: 0;
+    /*margin: 0;*/
     z-index: 110;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0
 }
 
 .share.fixed {
@@ -1869,7 +1872,7 @@ body {
 }
 
 .day .rule-2 .left-column {
-    padding-top: 214px;
+    padding-top: 270px;
 }
 
 .day .rule-2 .bg-image {
@@ -2429,7 +2432,7 @@ body {
     }
 
     .share {
-        padding-right: 12px;
+        margin-right: 12px;
     }
 
     .bag {
@@ -2500,6 +2503,10 @@ body {
 
     }
 
+    .page-nav-wrapper {
+        top: 14px;
+    }
+
     .page-nav > li + li {
         margin-left: 18px;
     }
@@ -2524,20 +2531,20 @@ body {
     }
 
     .share {
-        top: 0;
+        top: 14px;
     }
 
     .share li {
-        padding: 26px 12px;
+        padding: 12px;
     }
 
-    .share li:first-child {
+  /*  .share li:first-child {
         border-top: none;
     }
 
     .share li:last-child {
         border-bottom: none;
-    }
+    }*/
 
     .morning,
     .day,
@@ -2827,8 +2834,8 @@ body {
 
     .rule-3-bg .circle {
         bottom: 0;
-        left: auto;
-        right: -110px;
+        left: 150px;
+        /*right: -110px;*/
     }
 
     .rule-3-bg .bg-image {
@@ -2838,7 +2845,7 @@ body {
 
     .about {
         bottom: 132px;
-        right: -140px;
+        left: 354px;
         width: 300px;
     }
 
@@ -3593,7 +3600,7 @@ body {
     }
 
     .share li {
-        padding: 20px 8px;
+        padding: 8px;
     }
 
     .share .svg-inline--fa {
@@ -3725,7 +3732,7 @@ body {
     }
 
     .rules {
-        margin-bottom: 120px;
+        margin-bottom: 250px;
     }
 
     .rule-1 {
@@ -3759,7 +3766,7 @@ body {
 
     .about {
         bottom: 102px;
-        right: -22px;
+        left: 118px;
     }
 
     .morning .about-txt {
@@ -3961,10 +3968,6 @@ body {
         height: 26px;
     }
 
-    .share li {
-        padding: 12px 8px;
-    }
-
     .project-label {
         padding-left: 80px;
     }
@@ -3998,10 +4001,6 @@ body {
     .day-left-bg,
     .evening-left-bg {
         width: 40px;
-    }
-
-    .page-nav-wrapper {
-        top: 16px;
     }
 
     .page-nav > li:before {
