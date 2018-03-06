@@ -559,10 +559,12 @@ body {
 }
 
 .evening .dots-bg {
-    background: url("img/evening/dots-evening.png") no-repeat;
+    background: url("img/evening/evening-dots.png") no-repeat;
     /*top: 2856px;*/
     top: 3880px;
-    min-height: 6980px;
+    /*min-height: 6980px;*/
+    min-height: 10381px;
+    width: 1401px;
 }
 
 
