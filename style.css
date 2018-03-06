@@ -2754,7 +2754,8 @@ body {
 
     /* DAY 760 - 1199 *************************************************************************************************/
     .day .myths {
-        margin-bottom: 152px;
+        /*margin-bottom: 152px;*/
+        margin-bottom: 400px;
     }
 
     .myth-1-bg {
@@ -2763,7 +2764,8 @@ body {
     }
 
     .day .myth-1 {
-        margin-bottom: 96px;
+        /*margin-bottom: 96px;*/
+        margin-bottom: 248px;
     }
 
     .day .myth-1 .bg-image {
@@ -2773,9 +2775,8 @@ body {
     }
 
     .day .myth-1 .circle {
-        top: auto;
+        top: 290px;
         right: 296px;
-        bottom: 28px;
     }
 
     .day .myth-1 .rectangle {
@@ -2786,7 +2787,8 @@ body {
     }
 
     .day .myth-2 {
-        margin-bottom: 135px;
+        /*margin-bottom: 135px;*/
+        margin-bottom: 385px;
     }
 
     .day .myth-2-bg {
@@ -2833,7 +2835,8 @@ body {
     }
 
     .day .risks {
-        margin-bottom: 173px;
+        /*margin-bottom: 173px;*/
+        margin-bottom: 370px;
     }
 
     .day .risk-1 {
@@ -2868,7 +2871,8 @@ body {
     }
 
     .day .risk-2 {
-        margin-bottom: 134px;
+        /*margin-bottom: 134px;*/
+        margin-bottom: 350px;
     }
 
     .day .risk-2 .right-column.heading-group {
@@ -2912,7 +2916,8 @@ body {
     }
 
     .day .rule-1 {
-        margin-bottom: 136px;
+        /*margin-bottom: 136px;*/
+        margin-bottom: 340px;
     }
 
     .day .rule-1 .article-subtitle_small {
@@ -2944,7 +2949,8 @@ body {
     }
 
     .day .rule-2 {
-        margin-bottom: 133px;
+        /*margin-bottom: 133px;*/
+        margin-bottom: 300px;
     }
 
     .day .rule-2 .left-column {
@@ -2970,7 +2976,8 @@ body {
     }
 
     .day .rule-3 {
-        margin-bottom: 120px;
+        /*margin-bottom: 120px;*/
+        margin-bottom: 300px;
     }
 
     .day .rule-3-bg {
