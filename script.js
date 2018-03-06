@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     //Intro section height
@@ -8,16 +8,15 @@ $(document).ready(function() {
     }
 
     introHeight();
-    $(window).resize(function() {
+    $(window).resize(function () {
         introHeight();
     });
-
 
 
     //Scroll to section
     $('.sections-nav').click('li', function (event) {
         /*$(this).find('a').removeClass('active');
-        $(event.target).addClass('active');*/
+         $(event.target).addClass('active');*/
 
         var selector = $(event.target).attr('href');
 
@@ -28,10 +27,10 @@ $(document).ready(function() {
 
 
     //Switch the left menu-items on scroll
-    function onScroll(){
+    function onScroll() {
         var menu_selector = $('.sections-nav');
         var scrollTop = $(document).scrollTop();
-        menu_selector.find('a').each(function(){
+        menu_selector.find('a').each(function () {
             var hash = $(this).attr("href");
             var target = $(hash);
             if (target.position().top <= scrollTop && target.position().top + target.outerHeight() > scrollTop) {
@@ -54,36 +53,27 @@ $(document).ready(function() {
         var sharing = $('.share');
 
 
-        var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length-2);
+        var sectionsNavPos = sectionsNav.offset().top - sectionsNav.parent().css('top').substring(0, sectionsNav.parent().css('top').length - 2);
         // var pageNavPos = pageNav.offset().top - pageNav.parent().css('top').substring(0, pageNav.parent().css('top').length-2);
         var pageNavOffset = $(".intro").height();
-        var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length-2);
+        var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length - 2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
+        var scroll_top = Math.ceil($(document).scrollTop());
 
-        if($(document).scrollTop() >= pageNavOffset) {
+        if (scroll_top >= pageNavOffset) {
             sectionsNav.parent().addClass('fixed');
+            pageNav.parent().addClass('fixed');
+            morningLeft.addClass('fixed');
+            sharing.addClass('fixed');
 
         } else {
             sectionsNav.parent().removeClass('fixed');
-        }
-
-        if($(document).scrollTop() >=  pageNavOffset) {
-            pageNav.parent().addClass('fixed');
-        } else {
             pageNav.parent().removeClass('fixed');
-        }
-
-        if($(document).scrollTop() >=  pageNavOffset) {
-            morningLeft.addClass('fixed');
-        } else {
             morningLeft.removeClass('fixed');
+            sharing.removeClass('fixed');
+
         }
 
-        if($(document).scrollTop() >=  pageNavOffset) {
-            sharing.addClass('fixed');
-        } else {
-            sharing.removeClass('fixed');
-        }
     }
 
     fixingEl();
@@ -94,13 +84,12 @@ $(document).ready(function() {
 });
 
 
-
 (function () {
 
     var scroll_is_being_animated = false;
 
 
-    $(window).on('mousewheel',function (e) {
+    $(window).on('mousewheel', function (e) {
 
         // var $this = $(this);
         var $body = $("html, body");
@@ -118,7 +107,7 @@ $(document).ready(function() {
 
         if (e.originalEvent.wheelDelta < 0) { // Скролл вниз
             scroll_is_being_animated = true;
-            $body.stop().animate({scrollTop: first_slide.height()+10}, 500, function () {
+            $body.stop().animate({scrollTop: first_slide.height() + 10}, 500, function () {
                 scroll_is_being_animated = false;
             });
         }
@@ -146,7 +135,7 @@ jQuery(function () {
         taked_items = JSON.parse(storage_data);
     }
     taked_items.forEach(function (item_id) {
-        $('[data-bag_item='+item_id+']').siblings('.take').addClass('hidden');
+        $('[data-bag_item=' + item_id + ']').siblings('.take').addClass('hidden');
     });
 
     $('.take, .take-1').click(function () {
@@ -155,13 +144,12 @@ jQuery(function () {
         var item = $this.siblings('[data-bag_item]');
 
         var item_styles = {
-            top: bag.offset().top - item.offset().top + item.position().top ,
+            top: bag.offset().top - item.offset().top + item.position().top,
             left: bag.offset().left - item.offset().left + item.position().left
         };
 
         item.addClass('animate');
         $this.addClass('hidden');
-
 
 
         var bezier_params = {
@@ -171,14 +159,14 @@ jQuery(function () {
                 angle: 50
             },
             end: {
-                x:item_styles.left,
-                y:item_styles.top,
+                x: item_styles.left,
+                y: item_styles.top,
                 angle: -100,
                 length: .5
             }
         };
 
-        item.animate({path : new $.path.bezier(bezier_params)}, 1000, function () {
+        item.animate({path: new $.path.bezier(bezier_params)}, 1000, function () {
             if ($this.is('.take-1 ')) {
                 location.href = $(".next-page-link").attr('href');
             }
@@ -186,7 +174,7 @@ jQuery(function () {
 
         var item_id = item.data('bag_item');
 
-        if(!item_id){
+        if (!item_id) {
             throw new Error('no item id');
         }
 
@@ -217,13 +205,33 @@ jQuery(function () {
     var intro = $(".intro");
     var page_scroll_progress = $(".page-scroll-progress");
     $(window).on('scroll', function (e) {
+
+        var scroll_top = $("html, body").scrollTop();
+        var win_height = $(window).height();
+
         var intro_height = intro.height();
-        var max = $('body').height() - intro_height - $(window).height();
-        var current = $("html, body").scrollTop() - intro_height;
+        var max = $('body').height() - intro_height - win_height;
+        var current = scroll_top - intro_height;
 
         var scaleX = (current / max );
 
-        page_scroll_progress.css({transform: "skewX(-40deg) scaleX("+scaleX+")"});
+        page_scroll_progress.css({transform: "skewX(-40deg) scaleX(" + scaleX + ")"});
+
+
+        var visible_min = scroll_top + (win_height * .75);
+        // var visible_max = scroll_top + (win_height * .25);
+
+        $('.striped-circle').each(function () {
+
+            var offset_top = $(this).offset().top;
+
+            if (offset_top < visible_min) {// && offset_top > visible_max
+                $(this).addClass('show');
+                return;
+            }
+
+            $(this).removeClass('show');
+        })
     });
 
 });
