@@ -610,10 +610,12 @@ body {
 }
 
 .day .dots-bg {
-    background: url("img/day/dots-day.png") no-repeat;
+    background: url("img/day/dots-day.png") no-repeat 184px 0;
     /*top: 2850px;*/
     top: 3970px;
-    min-height: 8734px;
+    min-height: 13896px;
+    width: 1800px;
+    background-size: 80%;
 }
 
 .evening .dots-bg {
@@ -772,7 +774,7 @@ body {
 
 .thing-14 {
    /* top: 11546px;*/
-    top: 14705px;
+    top: 14630px;
 }
 
 .thing-14 .striped-circle {
@@ -1823,7 +1825,7 @@ body {
 }
 
 .day .rules {
-    margin-bottom: 955px;
+    margin-bottom: 933px;
 }
 
 .day .rule-1 {

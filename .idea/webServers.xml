@@ -8,6 +8,14 @@
       <webServer id="b04b0dbe-7bb0-4ee5-9113-0c13ea1ae49c" name="cls.recolon.ru" url="http://cytovir.cls.recolon.local">
         <fileTransfer mountedRoot="A:\cls\sites" accessType="MOUNT" />
       </webServer>
+      <webServer id="d8626a1f-1e1d-4940-b896-1072bf4f7a04" name="clients.recolon.ru" url="http://cytovir.clients.recolon.ru">
+        <fileTransfer host="fogels.lefoss.ga" port="21" rootFolder="/cytovir">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
