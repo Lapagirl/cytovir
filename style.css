@@ -4347,7 +4347,7 @@ body {
 
 }
 
-
+.counter{ text-align: center;}
 .take:hover + div { animation: shake linear infinite .25s alternate }
 .take:hover + div + div { animation: shake linear infinite .25s alternate }
 
