@@ -33,7 +33,7 @@ $(document).ready(function () {
         menu_selector.find('a').each(function () {
             var hash = $(this).attr("href");
             var target = $(hash);
-            if (target.position().top <= scrollTop && target.position().top + target.outerHeight() > scrollTop) {
+            if (target.offset().top <= scrollTop + 100 && target.offset().top + target.outerHeight() > scrollTop + 100) {
                 menu_selector.find('a').removeClass("active");
                 $(this).addClass("active");
             }
