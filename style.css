@@ -555,19 +555,16 @@ body {
     top: 32px;
     right:  calc((100% - 1440px) / 2);
     left: auto;
-    /*padding-right: 42px;*/
-    margin: 0 42px 0 0;
-    padding-right: 42px;
-    /*margin: 0;*/
+    margin: 0 34px 0 0;
     z-index: 110;
 }
-.share ul{
+
+.share ul {
     list-style: none;
-    /*margin: 0;*/
-  /*  z-index: 110;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0;*/
     margin: 0;
+    z-index: 110;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
 }
 
 .share.fixed {
@@ -583,7 +580,7 @@ body {
     cursor: pointer;
 }
 
-.share > li:last-child {
+.share li:last-child {
     border-bottom: solid 1px #e5e5e5;
 }
 .share .ya-share2__title{ display: none}
