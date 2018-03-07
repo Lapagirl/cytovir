@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('.sections-nav').click('li', function (event) {
         /*$(this).find('a').removeClass('active');
          $(event.target).addClass('active');*/
-
+        event.preventDefault();
         var selector = $(event.target).attr('href');
 
         $('html, body').animate({
