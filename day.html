@@ -412,5 +412,11 @@
 
         gtag('config', 'UA-115123139-1');
     </script>
+
+    <script>
+        if (navigator.userAgent.indexOf('Edge') > -1) {
+            $("[data-jarallax-element]").attr("data-jarallax-element", false);
+        }
+    </script>
 </body>
 </html>
