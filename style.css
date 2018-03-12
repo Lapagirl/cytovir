@@ -1170,7 +1170,8 @@ body {
     background: url(img/day/phone-shadow.png) no-repeat;
 }
 
-.balls {
+.balls,
+.balls-shadow {
     width: 232px;
     height: 195px;
     position: absolute;
@@ -1187,7 +1188,8 @@ body {
     background: url(img/day/balls-shadow.png) no-repeat;
 }
 
-.mascara {
+.mascara,
+.mascara-shadow {
     width: 64px;
     height: 258px;
     position: absolute;
@@ -1204,7 +1206,8 @@ body {
     background: url(img/day/mascara-shadow.png) no-repeat;
 }
 
-.note {
+.note,
+.note-shadow {
     width: 162px;
     height: 129px;
     position: absolute;
