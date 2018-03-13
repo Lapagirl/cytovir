@@ -209,7 +209,12 @@ jQuery(function () {
     var page_scroll_progress = $(".page-scroll-progress");
     $(window).on('scroll', function (e) {
 
-        var scroll_top = $("html, body").scrollTop();
+        var scroll_top = $("html, body").scrollTop()
+
+        if (navigator.userAgent.indexOf('Edge') > -1) {
+            scroll_top = document.getElementsByTagName('body')[0].scrollTop;
+        }
+        
         var win_height = $(window).height();
 
         var intro_height = intro.height();
