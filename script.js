@@ -88,6 +88,9 @@ $(document).ready(function () {
 
     var scroll_is_being_animated = false;
 
+    if (navigator.userAgent.indexOf('Edge') > -1) {
+        return;
+    }
 
     $(window).on('mousewheel', function (e) {
 
