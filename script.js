@@ -30,6 +30,11 @@ $(document).ready(function () {
     function onScroll() {
         var menu_selector = $('.sections-nav');
         var scrollTop = $(document).scrollTop();
+
+        if (navigator.userAgent.indexOf('Edge') > -1) {
+            scroll_top = document.getElementsByTagName('body')[0].scrollTop;
+        }
+
         menu_selector.find('a').each(function () {
             var hash = $(this).attr("href");
             var target = $(hash);
@@ -59,6 +64,10 @@ $(document).ready(function () {
         var morningLeftPos = morningLeft.offset().top - morningLeft.css('top').substring(0, morningLeft.css('top').length - 2);
         var sharePos = sharing.offset().top - sharing.css('top').replace('px', '');
         var scroll_top = Math.ceil($(document).scrollTop());
+
+        if (navigator.userAgent.indexOf('Edge') > -1) {
+            scroll_top = Math.ceil(document.getElementsByTagName('body')[0].scrollTop);
+        }
 
         if (scroll_top >= pageNavOffset) {
             sectionsNav.parent().addClass('fixed');
