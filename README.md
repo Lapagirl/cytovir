@@ -10,7 +10,7 @@ If the user didn't take it he see the message and the button 'take with me' in t
 The user has to push this button to take the product and go to the next page.
 
 ## Technologies
-* JS
-* JQUERY
-* Parallax
+* HTML5/CSS3
+* JS/JQUERY
+* Parallax lib
 * Adaptive design
